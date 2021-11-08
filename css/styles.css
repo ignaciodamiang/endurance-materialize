@@ -1,0 +1,17 @@
+
+.page-footer{
+    background-color: #02142c;
+}
+
+.page-footer p{
+    font-size: smaller;
+}
+.page-footer .material-icons{
+    margin-right: 5px;
+}
+
+.social-media img{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
