@@ -87,6 +87,23 @@ body{
     align-items: center;
     justify-content: center;
 }
+/* MAIN*/
+.main-navegation{
+    background-color: #ffea00;
+}
+.main-navegation p{
+    font-weight: bold;
+}
+.main-navegation h6{
+    float: right;
+    border: 10px solid transparent;
+    border-radius: 30px;
+    margin-top: 15px;
+    inline-size: auto;
+    background-color:#F28600;
+    font-weight: bold;
+
+}
 
 
 /* FOOTER */
