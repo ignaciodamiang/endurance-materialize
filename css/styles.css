@@ -70,9 +70,9 @@ header>div{
 .navegacion-principal{
     background-color: #02142c;
     width: 60%;
-    height: 32px;
+    height: 38px;
     margin: 0px auto;
-    border-radius: 16px;
+    border-radius: 19px;
     display: flex;
     align-items: center;
 }
@@ -82,21 +82,26 @@ header>div{
     justify-content: space-evenly;
 }
 .navegacion-principal a{
-    line-height: 32px;
+    line-height: 34px;
     font-weight: bold;
     color: rgb(240, 240, 240);
+    padding: 0px 20px;
 }
 .navegacion-principal a:hover{
     background-color: rgba(255, 255, 255, 0.2);
 }
+.navegacion-principal .pag-actual{
+    color: #dfd88f;
+}
+
 
 .busqueda{
     margin-left: auto;
     margin-right: 2px;
     line-height: normal;
     background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
-    width: 28px;
-    height: 28px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
 
     display: flex;
