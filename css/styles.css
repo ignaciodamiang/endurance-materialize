@@ -4,6 +4,17 @@ body{
 }
 
 /* HEADER */
+
+/* Hacen "flotar" al header por sobre el resto */
+header{
+    position: relative;
+}
+header>div{
+    position: absolute;
+    width: 100%;
+}
+
+/*la parte superior del header*/
 .header-superior{
     width: 70%;
     height: 75px;
@@ -21,7 +32,7 @@ body{
     width: 200px;
 }
 .control-usuario{
-    background-color: white;
+    background-color: rgb(240, 240, 240);
     width: 65px;
     height: 28px;
     border-radius: 14px;
@@ -40,6 +51,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgb(240, 240, 240);
 }
 #num-carrito{
     position: relative;
@@ -50,12 +62,11 @@ body{
     position: absolute;
     top: -6px;
     left: -16px;
-    color: white;
+    color: black;
     font-size: 12px;
 }
 
-
-
+/*la parte inferior donde está el nav*/
 .navegacion-principal{
     background-color: #02142c;
     width: 60%;
@@ -73,7 +84,12 @@ body{
 .navegacion-principal a{
     line-height: 32px;
     font-weight: bold;
+    color: rgb(240, 240, 240);
 }
+.navegacion-principal a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .busqueda{
     margin-left: auto;
     margin-right: 2px;
@@ -86,24 +102,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
-/* MAIN*/
-.main-navegation{
-    background-color: #ffea00;
-}
-.main-navegation p{
-    font-weight: bold;
-}
-.main-navegation h6{
-    float: right;
-    border: 10px solid transparent;
-    border-radius: 30px;
-    margin-top: 15px;
-    inline-size: auto;
-    background-color:#F28600;
-    font-weight: bold;
 
-}
 
 
 /* FOOTER */

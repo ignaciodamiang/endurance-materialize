@@ -1,0 +1,24 @@
+/*esto es solo por ahora, esperando reemplazo*/
+.div-temporal{
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
+}
+
+/* MAIN */
+.main-navegation{
+    background-color: #ffea00;
+}
+.main-navegation p{
+    font-weight: bold;
+}
+.main-navegation h6{
+    float: right;
+    border: 10px solid transparent;
+    border-radius: 30px;
+    margin-top: 15px;
+    inline-size: auto;
+    background-color:#F28600;
+    font-weight: bold;
+
+}

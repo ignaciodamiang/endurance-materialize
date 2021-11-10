@@ -12,51 +12,56 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- NUESTRO CSS -->
+    <!-- NUESTROS CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
     <header>
-        <div class="header-superior">
-            <img class="logotipo" src="img/logo-temporal.png" alt="Endurance">
+        <div>
+            <div class="header-superior">
+                <img class="logotipo" src="img/logo-temporal.png" alt="Endurance">
 
-            <div>
-                <div id="selector-lenguaje">
-                    <!-- no se como hacer esto de acá... -->
-                    <span class="material-icons">language</span>
-                </div>
-                <div id="carrito">
-                    <span class="material-icons">shopping_bag</span>
-                    <span id="num-carrito">
-                        <b>1</b>
-                    </span>
-                </div>
+                <div>
+                    <div id="selector-lenguaje">
+                        <!-- no se como hacer esto de acá... -->
+                        <span class="material-icons">language</span>
+                    </div>
+                    <div id="carrito">
+                        <span class="material-icons">shopping_bag</span>
+                        <span id="num-carrito">
+                            <b>1</b>
+                        </span>
+                    </div>
 
-                <div class="control-usuario">
-                    <span class="material-icons">table_rows</span>
-                    <span class="material-icons">account_circle</span>
+                    <div class="control-usuario">
+                        <span class="material-icons">table_rows</span>
+                        <span class="material-icons">account_circle</span>
+                    </div>
                 </div>
             </div>
+
+            <nav class="navegacion-principal">
+                <ul>
+                    <li><a href="#">Crea tu Calzado</a></li>
+                    <li><a href="#">Outlet</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Noticias</a></li>
+                </ul>
+                <div class="busqueda">
+                    <span class="material-icons">search</span>
+                </div>
+            </nav>
+            <br>
         </div>
-
-        <nav class="navegacion-principal">
-            <ul>
-                <li><a href="#">Crea tu Calzado</a></li>
-                <li><a href="#">Outlet</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Noticias</a></li>
-            </ul>
-            <div class="busqueda">
-                <span class="material-icons">search</span>
-            </div>
-        </nav>
-        <br>
     </header>
 
     <main class="main-navegation">
         <!-- todo el contenido de la página -->
-        <!--este br solo está para hacer espacio en la maquetación del header y el footer, después lo borramos-->
+
+        <div class="div-temporal"></div> <!-- este div es solo por ahora, en el home.css se le agrega un background para hacerle un fondo al header, después lo cambiamos por las imagenes finales -->
+
         <div class="container section">
 
             <div class="row">
@@ -80,7 +85,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col l5 s12">
+                <div class="col l5 m5 s12">
                     <h6 class="white-text">Unite a más de 5000 personas que quieren ser parte del cambio ambiental.</h6>
 
                     <form action="">
@@ -92,14 +97,14 @@
                     </form>
                 </div>
 
-                <div class="col l4 s12">
+                <div class="col l4 m4 s12">
                     <h6 class="white-text">Comunidad Endurance Argentina</h6>
                     <p class="grey-text">Nos esforzamos por educar y colabodrar con personas de ideas a fines para
                         marcar una diferencia ambiental y social. Juntos podemos lograr un impacto.</p>
                     <a href="" class="yellow-text">Acerca de nosotros</a>
                 </div>
 
-                <div class="col l3 s12">
+                <div class="col l3 m3 s12">
                     <h6>Contactos</h6>
 
                     <div class="valign-wrapper">
