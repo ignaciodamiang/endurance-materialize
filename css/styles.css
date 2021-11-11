@@ -91,7 +91,11 @@ header>div{
     background-color: rgba(255, 255, 255, 0.2);
 }
 .navegacion-principal .pag-actual{
-    color: #dfd88f;
+    color: #ffffff;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
+
+
 }
 
 
