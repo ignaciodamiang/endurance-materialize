@@ -1,72 +1,75 @@
-body{
-    /* color de fondo solo para testear */
-    background-color: rgb(202, 202, 202);
+body {
+  /* color de fondo solo para testear */
+  background-color: rgb(202, 202, 202);
 }
 
 /* HEADER */
 
 /* Hacen "flotar" al header por sobre el resto */
-header{
-    position: relative;
+header {
+  position: relative;
+  z-index: 10;
 }
-header>div{
-    position: absolute;
-    width: 100%;
+header > div {
+  position: absolute;
+  width: 100%;
 }
 
 /*la parte superior del header*/
-.header-superior{
-    width: 70%;
-    height: 75px;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
+.header-superior {
+  width: 70%;
+  height: 75px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
 }
-.header-superior>div{
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-}
-
-.logotipo{
-    width: 200px;
-}
-.control-usuario{
-    background-color: rgb(240, 240, 240);
-    width: 65px;
-    height: 28px;
-    border-radius: 14px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.control-usuario .material-icons{
-    color: rgb(78, 137, 225);
+.header-superior > div {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
-#carrito, #selector-lenguaje{
-    width: 28px;
-    height: 28px;
-    margin-right: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(240, 240, 240);
+.logotipo {
+  width: 200px;
 }
-#num-carrito{
-    position: relative;
-    bottom: 0px;
-    top: 0px;
+.control-usuario {
+  background-color: rgb(240, 240, 240);
+  width: 65px;
+  height: 28px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-#num-carrito b{
-    position: absolute;
-    top: -6px;
-    left: -16px;
-    color: black;
-    font-size: 12px;
+.control-usuario .material-icons {
+  color: rgb(78, 137, 225);
+}
+
+#carrito,
+#selector-lenguaje {
+  width: 28px;
+  height: 28px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(240, 240, 240);
+}
+#num-carrito {
+  position: relative;
+  bottom: 0px;
+  top: 0px;
+}
+#num-carrito b {
+  position: absolute;
+  top: -6px;
+  left: -16px;
+  color: black;
+  font-size: 12px;
 }
 
 /*la parte inferior donde está el nav*/
+
 .navegacion-principal{
     background-color: #02142c;
     width: 60%;
@@ -96,40 +99,55 @@ header>div{
     background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
 
 
+
 }
 
+.busqueda {
+  margin-left: auto;
+  margin-right: 2px;
+  line-height: normal;
+  background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
 
-.busqueda{
-    margin-left: auto;
-    margin-right: 2px;
-    line-height: normal;
-    background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
-
-
 
 /* FOOTER */
-.page-footer{
-    background-color: #02142c;
+.page-footer {
+  background-color: #02142c;
 }
 
-.page-footer p{
-    font-size: smaller;
+.page-footer p {
+  font-size: smaller;
 }
-.page-footer .material-icons{
-    margin-right: 5px;
+.page-footer .material-icons {
+  margin-right: 5px;
 }
 
-.social-media img{
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
+.social-media img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+/* Posición texto de slider */
+.caption {
+  top: 30% !important;
+}
+
+/* Posición indicadores de slider */
+.slider .indicators {
+  bottom: 2%;
+  z-index: 11;
+}
+
+/* Tamaño slider */
+.slider,
+.slides {
+  height: 600px !important;
 }

@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Endurance</title>
 
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
     <!-- NUESTROS CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/home.css">
-</head>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>
-            <div class="header-superior">
-                <a href="index.html">
-                    <img class="logotipo" src="img/endurance-imagotipo.png" alt="Endurance">
-                </a>
+      <div>
+        <div class="header-superior">
+          <a href="index.html">
+            <img
+              class="logotipo"
+              src="img/endurance-imagotipo.png"
+              alt="Endurance"
+            />
+          </a>
 
-
-                <div>
-                    <div id="selector-lenguaje">
-                        <!-- no se como hacer esto de acá... -->
-                        <span class="material-icons">language</span>
-                    </div>
-                    <div id="carrito">
-                        <span class="material-icons">shopping_bag</span>
-                        <span id="num-carrito">
-                            <b>1</b>
-                        </span>
-                    </div>
-
-                    <div class="control-usuario">
-                        <span class="material-icons">table_rows</span>
-                        <span class="material-icons">account_circle</span>
-                    </div>
-                </div>
+          <div>
+            <div id="selector-lenguaje">
+              <!-- no se como hacer esto de acá... -->
+              <span class="material-icons">language</span>
             </div>
+            <div id="carrito">
+              <span class="material-icons">shopping_bag</span>
+              <span id="num-carrito">
+                <b>1</b>
+              </span>
+            </div>
+
+
+            <div class="control-usuario">
+              <span class="material-icons">table_rows</span>
+              <span class="material-icons">account_circle</span>
+            </div>
+          </div>
 
             <nav class="navegacion-principal">
                 <ul>
@@ -59,9 +63,89 @@
                 </div>
             </nav>
             <br>
+
         </div>
+
+       
     </header>
 
+    <!-- Slider Large -->
+    <div class="slider hide-on-med-and-down">
+      <ul class="slides">
+        <li>
+          <img src="img/slider-1-large.png" />
+          <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Here's our small slogan.
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/slider-2-large.png" />
+          <!-- random image -->
+          <div class="caption left-align">
+            <h3>Left Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Here's our small slogan.
+            </h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Slider Med -->
+    <div class="slider hide-on-small-only hide-on-large-only">
+      <ul class="slides">
+        <li>
+          <img src="img/slider-1.png" />
+          <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Here's our small slogan.
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/slider-2.png" />
+          <!-- random image -->
+          <div class="caption left-align">
+            <h3>Left Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Here's our small slogan.
+            </h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Slider Small -->
+    <div class="slider hide-on-med-and-up">
+      <ul class="slides">
+        <li>
+          <img src="img/slider-1-small.png" />
+          <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Here's our small slogan.
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/slider-2-small.png" />
+          <!-- random image -->
+          <div class="caption left-align">
+            <h3>Left Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Here's our small slogan.
+            </h5>
+          </div>
+        </li>
+      </ul>
+    </div>
     <main class="main-navegation">
         <!-- todo el contenido de la página -->
 
@@ -147,9 +231,16 @@
             </div>
         </div>
     </footer>
-
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".slider");
+        var instances = M.Slider.init(elems, {});
 
+        var elems = document.querySelectorAll(".materialboxed");
+        var instances = M.Materialbox.init(elems);
+      });
+    </script>
+  </body>
 </html>
