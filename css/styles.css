@@ -69,31 +69,37 @@ header > div {
 }
 
 /*la parte inferior donde está el nav*/
-.navegacion-principal {
-  background-color: #02142c;
-  width: 60%;
-  height: 38px;
-  margin: 0px auto;
-  border-radius: 19px;
-  display: flex;
-  align-items: center;
+
+.navegacion-principal{
+    background-color: #02142c;
+    width: 60%;
+    height: 38px;
+    margin: 0px auto;
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
 }
-.navegacion-principal ul {
-  width: 97%;
-  display: flex;
-  justify-content: space-evenly;
+.navegacion-principal ul{
+    width: 97%;
+    display: flex;
+    justify-content: space-evenly;
 }
-.navegacion-principal a {
-  line-height: 34px;
-  font-weight: bold;
-  color: rgb(240, 240, 240);
-  padding: 0px 20px;
+.navegacion-principal a{
+    line-height: 34px;
+    font-weight: bold;
+    color: rgb(240, 240, 240);
+    padding: 0px 20px;
 }
-.navegacion-principal a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+.navegacion-principal a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
 }
-.navegacion-principal .pag-actual {
-  color: #dfd88f;
+.navegacion-principal .pag-actual{
+    color: #ffffff;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
+
+
+
 }
 
 .busqueda {
