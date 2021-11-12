@@ -77,3 +77,15 @@
     text-align: center;
     margin-left: 41%;
 }
+.card-newsletter .card-title{
+    padding-top: 80px;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.card-newsletter h5{
+    padding-bottom: 83px;
+}
+.card-newsletter .card-content{
+    margin-left: 30px;
+}
