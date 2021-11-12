@@ -84,8 +84,124 @@
 }
 
 .card-newsletter h5{
-    padding-bottom: 83px;
+    padding-bottom: 85px;
 }
 .card-newsletter .card-content{
     margin-left: 30px;
+}
+@media screen and (max-width: 1599px) {
+    .card .card-title{
+        font-size: 15px;
+    }
+    .card .card-content{
+        font-size: 5px;
+        text-justify: auto;
+    }
+    .cardright{
+        background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
+        box-shadow: 13px 13px  #01132B;
+        margin-top: 10px;
+    }
+    .cardright .card-content{
+        text-justify: auto;
+    }
+    .cardright .card-title{
+        font-size: 20px;
+    }
+    .card-newsletter{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+
+    .card-newsletter .card-title{
+        padding-top: 10px;
+        font-size: 35px;
+        padding-bottom: 5px;
+        text-justify: auto;
+    }
+    
+    .card-newsletter .card-content{
+        margin-left: 30px;
+    }
+    .card-newsletter h5{
+        padding-bottom: 5px;
+    }
+    .seccion-newsletter-medio h6 {
+        width: 200px;
+        border: 10px solid transparent;
+        border-radius: 30px;
+        background-color: #F28600;
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: center;
+        margin-left: 250px;
+    }
+    .seccion-newsletter h6 {
+     text-align: center;
+        float: right;
+        border: 10px solid transparent;
+        border-radius: 30px;
+        margin-top: 15px;
+        inline-size: auto;
+        background-color: #F28600;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 992px) {
+    .card .card-title{
+        font-size: 15px;
+    }
+    .card .card-content{
+        font-size: 5px;
+        text-justify: auto;
+    }
+    .cardright{
+        background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
+        box-shadow: 13px 13px  #01132B;
+        margin-top: 10px;
+    }
+    .cardright .card-content{
+        text-justify: auto;
+    }
+    .cardright .card-title{
+        font-size: 20px;
+    }
+    .card-newsletter{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+
+    .card-newsletter .card-title{
+        padding-top: 10px;
+        font-size: 35px;
+        padding-bottom: 5px;
+        text-justify: auto;
+    }
+    
+    .card-newsletter .card-content{
+        margin-left: 30px;
+    }
+    .card-newsletter h5{
+        padding-bottom: 48px;
+    }
+    .seccion-newsletter-medio h6 {
+        width: 200px;
+        border: 10px solid transparent;
+        border-radius: 30px;
+        background-color: #F28600;
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: center;
+        margin-left: 315px;
+    }
+    .seccion-newsletter h6 {
+     text-align: center;
+        float: right;
+        border: 10px solid transparent;
+        border-radius: 30px;
+        margin-top: 15px;
+        inline-size: auto;
+        background-color: #F28600;
+        font-weight: bold;
+    }
 }
