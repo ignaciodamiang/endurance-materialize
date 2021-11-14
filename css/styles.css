@@ -253,6 +253,12 @@ header > div {
   width: 120%;
 }
 
+.card-zapatillas {
+  box-shadow: 13px 13px #01132b;
+  background-color: lightgray;
+  margin: 5%;
+}
+
 @media screen and (max-width: 1599px) {
   .card .card-title {
     font-size: 15px;
