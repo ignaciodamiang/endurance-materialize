@@ -17,49 +17,69 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <div class="header-superior">
-                <a href="index.html">
-                    <img class="logotipo" src="img/endurance-imagotipo.png" alt="Endurance">
-                </a>
-
-
-                <div>
-                    <div id="selector-lenguaje">
-                        <!-- no se como hacer esto de acá... -->
-                        <span class="material-icons">language</span>
-                    </div>
-                    <div id="carrito">
-                        <span class="material-icons">shopping_bag</span>
-                        <span id="num-carrito">
-                            <b>1</b>
-                        </span>
-                    </div>
-
-                    <div class="control-usuario">
-                        <span class="material-icons">table_rows</span>
-                        <span class="material-icons">account_circle</span>
-                    </div>
+    <header class="container">
+        <div class="row">
+          <div class="header-superior col m12">
+            <a href="index.html">
+              <img
+                class="logotipo"
+                src="img/endurance-imagotipo.png"
+                alt="Endurance"
+              />
+            </a>
+    
+            <div>
+              <div id="selector-lenguaje">
+                <!-- selector de idioma, aparece y desaparece
+                  según haces click en el icono de lenguaje -->
+                <div class="lenguaje-contenedor hide">
+                  <a href="#"><span>Español</span></a>
+                  <a href="#"><span>English</span></a>
                 </div>
+                <span class="material-icons">language</span>
+              </div>
+    
+              <div id="carrito">
+                <span class="material-icons">shopping_bag</span>
+                <span id="num-carrito">
+                  <b>1</b>
+                </span>
+              </div>
+    
+              <div class="control-usuario">
+                <span class="material-icons">table_rows</span>
+                <span class="material-icons">account_circle</span>
+              </div>
             </div>
-
-            <nav class="navegacion-principal">
-                <ul>
-                    <!-- X -->
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Crea tu Calzado</a></li>
-                    <li><a href="#">Outlet</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a class="pag-actual" href="noticias.html">Noticias</a></li>
-                </ul>
-                <div class="busqueda">
-                    <span class="material-icons">search</span>
-                </div>
-            </nav>
-            <br>
+          </div>
+    
+          <nav class="navegacion-principal col m10 push-m1">
+            <ul class="">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#">Crea tu Calzado</a></li>
+              <li><a href="#">Outlet</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a class="pag-actual" href="noticias.html">Noticias</a></li>
+            </ul>
+    
+            <!-- esta es la barra de busqueda
+              aparece si apretas el botón de busqueda
+              y desaparece cuando clickeas afuera -->
+            <div class="busqueda-activada hide">
+              <form action="">
+                <input type="search" name="search" id="search" placeholder="Buscar...">
+                <label class="hide" for="search">
+                  <input type="submit" value="">
+                </label>
+              </form>
+            </div>
+    
+            <div class="busqueda">
+              <span class="material-icons">search</span>
+            </div>
+          </nav>
         </div>
-    </header>
+      </header>
 
     <main class="main-navegation">
         <!-- todo el contenido de la página -->
@@ -316,6 +336,10 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Hector- agregue jqueary, pero si quieren lo pueden traducir a javascript común -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/code.js"></script>
 </body>
 
 </html>

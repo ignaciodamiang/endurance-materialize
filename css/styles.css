@@ -5,7 +5,6 @@ body {
 
 /* HEADER */
 
-/* Hacen "flotar" al header por sobre el resto */
 header {
   position: relative;
   z-index: 10;
@@ -17,9 +16,7 @@ header > div {
 
 /*la parte superior del header*/
 .header-superior {
-  width: 70%;
-  height: 75px;
-  margin: 0px auto;
+  height: 80px;
   display: flex;
   align-items: center;
 }
@@ -30,30 +27,33 @@ header > div {
 }
 
 .logotipo {
-  width: 200px;
+  width: 170px;
+  display: block;
 }
 .control-usuario {
   background-color: rgb(240, 240, 240);
-  width: 65px;
-  height: 28px;
-  border-radius: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .control-usuario .material-icons {
+  font-size: 32px;
   color: rgb(78, 137, 225);
+  cursor: pointer;
 }
 
 #carrito,
 #selector-lenguaje {
-  width: 28px;
   height: 28px;
-  margin-right: 5px;
+  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: rgb(240, 240, 240);
+  cursor: pointer;
 }
 #num-carrito {
   position: relative;
@@ -64,23 +64,55 @@ header > div {
   position: absolute;
   top: -6px;
   left: -16px;
-  color: black;
+  color:#02142c;
   font-size: 12px;
 }
 
-/*la parte inferior donde está el nav*/
+.lenguaje-contenedor{
+  height: 26px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin-right: 2px;
+  padding: 0px 5px;
+  display: flex;
+  align-items: center;
+  cursor: default;
+}
+.lenguaje-contenedor > a{
+  font-size: 16px;
+  color: #50647e;
+  padding: 0px 4px;
+}
+.lenguaje-contenedor > a:hover{
+  color: black;
+}
 
+.usuario-contenedor{
+  position: absolute;
+  z-index: 200;
+  top: 60px;
+  right: 25px;
+  width: 200px;
+  background-color: #ffffff;
+  border-radius: 25px 0px 25px 25px;
+  padding: 10px;
+}
+
+/* HEADER-NAV*/
 .navegacion-principal {
   background-color: #02142c;
-  width: 60%;
   height: 38px;
-  margin: 0px auto;
   border-radius: 19px;
   display: flex;
   align-items: center;
 }
+
+.row .navegacion-principal.col{
+  padding: 0px 0px;
+}
+
 .navegacion-principal ul {
-  width: 97%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -113,6 +145,26 @@ header > div {
   justify-content: center;
   cursor: pointer;
 }
+
+.busqueda-activada{
+  width: 100%;
+  padding: 0px 15px;
+}
+.busqueda-activada form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.busqueda-activada input#search{
+  width: 100%;
+  color: #ffffff;
+  margin: 0px;
+  border-bottom: none;
+  height: 2rem;
+}
+
+
+
 
 /* FOOTER */
 .page-footer {
