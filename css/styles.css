@@ -182,7 +182,6 @@ header > div {
 
 
 
-
 /* FOOTER */
 .page-footer {
   background-color: #02142c;
@@ -200,6 +199,8 @@ header > div {
   height: 24px;
   margin-right: 5px;
 }
+
+
 
 /* Posición texto de slider */
 .caption {
@@ -248,6 +249,60 @@ header > div {
   background-color: #f28600;
   font-weight: bold;
 }
+
+
+
+/* PAGINA DE CREA TU CALZADO */
+.creador-calzado{
+  height: 80vh;
+  max-height: 900px;
+  background-image: url(../img/urbano.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  position: relative;
+}
+
+.bl-izquierda, .bh-superior, .bh-inferior, .bl-derecha{
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.bl-izquierda{
+  width: 25%;
+  min-height: 25%;
+  top: 10%;
+  left: 10px;
+}
+.bh-superior{
+  min-width: 25%;
+  height: 3rem;
+  top: 2%;
+  left: 10px;
+}
+.bh-inferior{
+  min-width: 25%;
+  height: 3rem;
+  bottom: 2%;
+  left: 10px;
+}
+.bl-derecha{
+  width: 25%;
+  min-height: 25%;
+  top: 2%;
+  right: 10px;
+}
+.boton-finalizar-calzado{
+  position: absolute;
+  bottom: 2%;
+  right: 10px;
+}
+
+
+
 /* EMPIEZA LA SECCION DE NOTICIAS*/
 .noticias-section {
   background-color: #ffffff;

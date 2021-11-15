@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Endurance</title>
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- NUESTROS CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="container">
+      <div class="row">
+        <div class="header-superior col m12">
+          <a href="index.html">
+            <img
+              class="logotipo"
+              src="img/endurance-imagotipo.png"
+              alt="Endurance"
+            />
+          </a>
+  
+          <div>
+            <div id="selector-lenguaje">
+              <!-- selector de idioma, aparece y desaparece
+                según haces click en el icono de lenguaje -->
+              <div class="lenguaje-contenedor hide">
+                <a href="#"><span>Español</span></a>
+                <a href="#"><span>English</span></a>
+              </div>
+              <span class="material-icons">language</span>
+            </div>
+  
+            <div id="carrito">
+              <span class="material-icons">shopping_bag</span>
+              <span id="num-carrito">
+                <b>1</b>
+              </span>
+            </div>
+  
+            <div class="control-usuario">
+              <span class="material-icons">account_circle</span>
+
+              <!-- cuadro de usuario
+              se activa si das click en el icono
+              se desactiva si das click afuera -->
+              <div class="usuario-contenedor z-depth-3 hide">
+                <div>
+                  <span class="material-icons">account_circle</span>
+                  Invitado
+                </div>
+                <div>
+                  <button class="btn">Ingresar</button>
+                  <button class="btn">Registrarse</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <nav class="navegacion-principal col m12 l10 push-l1">
+          <ul class="">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a class="pag-actual" href="crea-tu-calzado.html">Crea tu Calzado</a></li>
+            <li><a href="#">Outlet</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+          </ul>
+  
+          <!-- esta es la barra de busqueda
+            aparece si apretas el botón de busqueda
+            y desaparece cuando clickeas afuera -->
+          <div class="busqueda-activada hide">
+            <form action="">
+              <input type="search" name="search" id="search" placeholder="Buscar...">
+              <label class="hide" for="search">
+                <input type="submit" value="">
+              </label>
+            </form>
+          </div>
+  
+          <div class="busqueda">
+            <span class="material-icons">search</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="degradado"></div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="creador-calzado col s12">
+            
+            <div class="bl-izquierda z-depth-2">
+              <!-- opciones, caracteristicas del calzado -->
+            </div>
+  
+            <div class="bh-superior z-depth-2">
+              <!-- opciones del calzado: talle, color... -->
+            </div>
+  
+            <div class="bh-inferior z-depth-2">
+              <!-- opciones de archivo: historial, reset, deshacer... -->
+            </div>
+            
+            <div class="bl-derecha z-depth-2">
+              <!-- parte de precios -->
+            </div>
+          
+            <button class="boton-finalizar-calzado btn-large">FINALIZAR</button>
+          </div>
+        </div>
+      </div>
+    
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l5 m5 s12">
+            <h6 class="white-text">
+              Unite a más de 5000 personas que quieren ser parte del cambio
+              ambiental.
+            </h6>
+
+            <form action="">
+              <div class="input-field">
+                <input id="email" type="email" class="validate" />
+                <label for="email">Email</label>
+              </div>
+              <input class="btn enviar-email" type="submit" value="Unite" />
+            </form>
+          </div>
+
+          <div class="col l4 m4 s12">
+            <h6 class="white-text">Comunidad Endurance Argentina</h6>
+            <p class="grey-text">
+              Nos esforzamos por educar y colaborar con personas de ideas a
+              fines para marcar una diferencia ambiental y social. Juntos
+              podemos lograr un impacto.
+            </p>
+            <a href="" class="yellow-text">Acerca de nosotros</a>
+          </div>
+
+          <div class="col l3 m3 s12">
+            <h6>Contacto</h6>
+
+            <div class="valign-wrapper">
+              <span class="material-icons">email</span>
+              <div class="grey-text">info@endurance.com</div>
+            </div>
+
+            <div class="valign-wrapper">
+              <span class="material-icons">whatsapp</span>
+              <div class="grey-text">+54 1161846612</div>
+            </div>
+
+            <p class="grey-text">Atención al cliente las 24 horas</p>
+            <div class="social-media">
+              <a href="https://facebook.com" target="_black"
+                ><img src="img/Facebook.svg" alt="Facebook"
+              /></a>
+              <a href="https://twitter.com" target="_black"
+                ><img src="img/Twitter.svg" alt="Twitter"
+              /></a>
+              <a href="https://instagram.com" target="_black"
+                ><img src="img/Instagram.svg" alt="Instagram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="container">
+          Al registrarte aceptas nuestra
+          <a class="yellow-text" href="">Politica de Privacidad</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".slider");
+        var instances = M.Slider.init(elems, {});
+
+        var elems = document.querySelectorAll(".materialboxed");
+        var instances = M.Materialbox.init(elems);
+      });
+    </script>
+
+
+    <!-- Hector- agregue jqueary, pero si quieren lo pueden traducir a javascript común -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/code.js"></script>
+  </body>
+</html>
