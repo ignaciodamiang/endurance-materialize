@@ -23,7 +23,11 @@
   <body>
     <header class="container">
       <div class="row">
-        <div class="header-superior col m12">
+        <div class="header-superior col s12">
+          <a href="#" class="sidenav-trigger white-text hide-on-med-and-up" data-target="menu-side">
+            <span class="material-icons">menu</span>
+          </a>
+
           <a href="index.html">
             <img
               class="logotipo"
@@ -32,8 +36,8 @@
             />
           </a>
   
-          <div>
-            <div id="selector-lenguaje">
+          <div class="hide-on-small-only">
+            <div class="selector-lenguaje">
               <!-- selector de idioma, aparece y desaparece
                 según haces click en el icono de lenguaje -->
               <div class="lenguaje-contenedor hide">
@@ -43,9 +47,9 @@
               <span class="material-icons">language</span>
             </div>
   
-            <div id="carrito">
+            <div class="carrito">
               <span class="material-icons">shopping_bag</span>
-              <span id="num-carrito">
+              <span class="num-carrito">
                 <b>1</b>
               </span>
             </div>
@@ -68,9 +72,13 @@
               </div>
             </div>
           </div>
+
+          <div class="white-text hide-on-med-and-up">
+            <span class="material-icon">account_circle</span>
+          </div>
         </div>
   
-        <nav class="navegacion-principal col m12 l10 push-l1">
+        <nav class="navegacion-principal col m12 l10 push-l1 hide-on-small-only">
           <ul class="">
             <li><a href="index.html">Inicio</a></li>
             <li><a class="pag-actual" href="crea-tu-calzado.html">Crea tu Calzado</a></li>
@@ -95,6 +103,15 @@
             <span class="material-icons">search</span>
           </div>
         </nav>
+
+        <!-- sidenav, barra lateral de la version movil -->
+        <ul class="sidenav" id="menu-side">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="pag-actual" href="crea-tu-calzado.html">Crea tu Calzado</a></li>
+          <li><a href="#">Outlet</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+        </ul>
       </div>
     </header>
 
@@ -202,6 +219,9 @@
 
         var elems = document.querySelectorAll(".materialboxed");
         var instances = M.Materialbox.init(elems);
+
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
       });
     </script>
 

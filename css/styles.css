@@ -1,6 +1,7 @@
 body {
   /* color de fondo solo para testear */
-  background-color: rgb(202, 202, 202);
+  /*background-color: rgb(202, 202, 202);
+*/
 }
 
 /* HEADER */
@@ -45,8 +46,8 @@ header > div {
   cursor: pointer;
 }
 
-#carrito,
-#selector-lenguaje {
+.carrito,
+.selector-lenguaje {
   height: 28px;
   margin-right: 10px;
   display: flex;
@@ -55,12 +56,12 @@ header > div {
   color: rgb(240, 240, 240);
   cursor: pointer;
 }
-#num-carrito {
+.num-carrito {
   position: relative;
   bottom: 0px;
   top: 0px;
 }
-#num-carrito b {
+.num-carrito b {
   position: absolute;
   top: -6px;
   left: -16px;
@@ -114,6 +115,9 @@ header > div {
 }
 
 
+.sidenav-trigger span.material-icons {
+  display: block;
+}
 
 /* HEADER-NAV*/
 .navegacion-principal {
@@ -137,7 +141,7 @@ header > div {
   line-height: 34px;
   font-weight: bold;
   color: rgb(240, 240, 240);
-  padding: 0px 20px;
+  padding: 0px 17px;
 }
 .navegacion-principal a:hover {
   background-color: rgba(255, 255, 255, 0.2);
@@ -180,6 +184,10 @@ header > div {
   height: 2rem;
 }
 
+/* HEADER SIDENAV (MOVILE) */
+.sidenav-overlay{
+  z-index: 9;
+}
 
 
 /* FOOTER */
