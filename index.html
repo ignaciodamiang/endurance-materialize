@@ -23,7 +23,11 @@
   <body>
     <header class="container">
       <div class="row">
-        <div class="header-superior col m12">
+        <div class="header-superior col s12">
+          <a href="#" class="sidenav-trigger white-text hide-on-med-and-up" data-target="menu-side">
+            <span class="material-icons">menu</span>
+          </a>
+
           <a href="index.html">
             <img
               class="logotipo"
@@ -32,8 +36,8 @@
             />
           </a>
   
-          <div>
-            <div id="selector-lenguaje">
+          <div class="">
+            <div class="selector-lenguaje hide-on-small-only">
               <!-- selector de idioma, aparece y desaparece
                 según haces click en el icono de lenguaje -->
               <div class="lenguaje-contenedor hide">
@@ -43,9 +47,9 @@
               <span class="material-icons">language</span>
             </div>
   
-            <div id="carrito">
+            <div class="carrito hide-on-small-only">
               <span class="material-icons">shopping_bag</span>
-              <span id="num-carrito">
+              <span class="num-carrito">
                 <b>1</b>
               </span>
             </div>
@@ -68,9 +72,11 @@
               </div>
             </div>
           </div>
+
+          
         </div>
-  
-        <nav class="navegacion-principal col m12 l10 push-l1">
+
+        <nav class="navegacion-principal col m12 l10 push-l1 hide-on-small-only">
           <ul class="">
             <li><a class="pag-actual" href="index.html">Inicio</a></li>
             <li><a href="crea-tu-calzado.html">Crea tu Calzado</a></li>
@@ -95,6 +101,42 @@
             <span class="material-icons">search</span>
           </div>
         </nav>
+        <!-- sidenav, barra lateral de la version movil -->
+        <ul class="sidenav" id="menu-side">
+          <li>
+            <div class="user-view">
+              <div class="background"></div>
+              <div class="datos-usuario">
+                <a href="#"><span class="material-icons">account_circle</span></a>
+                <a href="#"><span class="white-text nombre">Invitado</span></a>
+                <div class="login-registro">
+                  <button class="btn">Ingresar</button>
+                  <button class="btn">Registrarse</button>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="carrito-compra">
+            <a href="">
+              <span class="material-icons">shopping_bag</span>
+              <span>Carrito</span>
+            </a>
+          </li>
+
+          <li><div class="divider"></div></li>
+
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="pag-actual" href="crea-tu-calzado.html">Crea tu Calzado</a></li>
+          <li><a href="#">Outlet</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+
+          <li class="selector-lenguaje-sn">
+            <a href="#"><span>Español</span></a>
+            <a href="#"><span>English</span></a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -351,7 +393,7 @@
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col l5 m5 s12">
+          <div class="col m5 s12">
             <h6 class="white-text">
               Unite a más de 5000 personas que quieren ser parte del cambio
               ambiental.
@@ -366,7 +408,9 @@
             </form>
           </div>
 
-          <div class="col l4 m4 s12">
+          <div class="col s12 divider hide-on-med-and-up"></div>
+
+          <div class="col m4 s12 hide-on-small-only">
             <h6 class="white-text">Comunidad Endurance Argentina</h6>
             <p class="grey-text">
               Nos esforzamos por educar y colaborar con personas de ideas a
@@ -376,7 +420,7 @@
             <a href="" class="yellow-text">Acerca de nosotros</a>
           </div>
 
-          <div class="col l3 m3 s12">
+          <div class="col m3 s12">
             <h6>Contacto</h6>
 
             <div class="valign-wrapper">
@@ -422,6 +466,9 @@
 
         var elems = document.querySelectorAll(".materialboxed");
         var instances = M.Materialbox.init(elems);
+        
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
       });
     </script>
 
