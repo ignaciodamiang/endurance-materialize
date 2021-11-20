@@ -109,12 +109,12 @@ header > div {
   font-size: large;
   font-weight: 600;
 }
-.usuario-contenedor button, .sidenav .login-registro button{
+.usuario-contenedor a, .sidenav .login-registro a{
   padding: 0px 10px;
   margin: 10px 5px 0px 5px;
   background-color: rgb(78, 137, 225);
 }
-.usuario-contenedor button:hover{
+.usuario-contenedor a:hover{
   background-color: rgb(32, 54, 140);
 }
 
@@ -163,7 +163,9 @@ header > div {
 .sidenav .carrito-compra a .material-icons{
   margin-right: 10px;
 }
-
+.sidenav .pag-actual{
+  background-color:gainsboro;
+}
 .selector-lenguaje-sn{
   width: 100%;
   display: flex;
@@ -172,6 +174,8 @@ header > div {
 .selector-lenguaje-sn a{
   padding: 0 15px !important;
 }
+
+
 
 /* HEADER-NAV*/
 .navegacion-principal {
@@ -238,10 +242,6 @@ header > div {
   height: 2rem;
 }
 
-/* HEADER SIDENAV (MOVILE) */
-.sidenav-overlay{
-  z-index: 9;
-}
 
 
 /* FOOTER */
@@ -349,15 +349,15 @@ footer div.divider{
 
 .bl-izquierda{
   top: 2%;
-  left: 10px;
+  left: 0px;
 }
 .bh-inferior{
   bottom: 2%;
-  left: 10px;
+  left: 0px;
 }
 .bl-derecha{
   top: 2%;
-  right: 10px;
+  right: 0px;
 }
 
 .boton-edit-calzado{

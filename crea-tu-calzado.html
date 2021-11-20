@@ -66,14 +66,12 @@
                   Invitado
                 </div>
                 <div>
-                  <button class="btn">Ingresar</button>
-                  <button class="btn">Registrarse</button>
+                  <a class="btn modal-trigger" href="#modal-ingreso">Ingresar</a>
+                  <a class="btn modal-trigger" href="#modal-registro">Registrarse</a>
                 </div>
               </div>
             </div>
           </div>
-
-          
         </div>
 
         <nav class="navegacion-principal col m12 l10 push-l1 hide-on-small-only">
@@ -101,44 +99,45 @@
             <span class="material-icons">search</span>
           </div>
         </nav>
-        <!-- sidenav, barra lateral de la version movil -->
-        <ul class="sidenav" id="menu-side">
-          <li>
-            <div class="user-view">
-              <div class="background"></div>
-              <div class="datos-usuario">
-                <a href="#"><span class="material-icons">account_circle</span></a>
-                <a href="#"><span class="white-text nombre">Invitado</span></a>
-                <div class="login-registro">
-                  <button class="btn">Ingresar</button>
-                  <button class="btn">Registrarse</button>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="carrito-compra">
-            <a href="">
-              <span class="material-icons">shopping_bag</span>
-              <span>Carrito</span>
-            </a>
-          </li>
-
-          <li><div class="divider"></div></li>
-
-          <li><a href="index.html">Inicio</a></li>
-          <li><a class="pag-actual" href="crea-tu-calzado.html">Crea tu Calzado</a></li>
-          <li><a href="#">Outlet</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="noticias.html">Noticias</a></li>
-
-          <li class="selector-lenguaje-sn">
-            <a href="#"><span>Español</span></a>
-            <a href="#"><span>English</span></a>
-          </li>
-        </ul>
       </div>
     </header>
+
+    <!-- sidenav, barra lateral de la version movil -->
+    <ul class="sidenav" id="menu-side">
+      <li>
+        <div class="user-view">
+          <div class="background"></div>
+          <div class="datos-usuario">
+            <a href="#"><span class="material-icons">account_circle</span></a>
+            <a href="#"><span class="white-text nombre">Invitado</span></a>
+            <div class="login-registro">
+              <a class="btn modal-trigger" href="#modal-ingreso">Ingresar</a>
+              <a class="btn modal-trigger" href="#modal-registro">Registrarse</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="carrito-compra">
+        <a href="">
+          <span class="material-icons">shopping_bag</span>
+          <span>Carrito</span>
+        </a>
+      </li>
+
+      <li><div class="divider"></div></li>
+
+      <li><a href="index.html">Inicio</a></li>
+      <li><a class="pag-actual" href="crea-tu-calzado.html">Crea tu Calzado</a></li>
+      <li><a href="#">Outlet</a></li>
+      <li><a href="#">Nosotros</a></li>
+      <li><a href="noticias.html">Noticias</a></li>
+
+      <li class="selector-lenguaje-sn">
+        <a href="#"><span>Español</span></a>
+        <a href="#"><span>English</span></a>
+      </li>
+    </ul>
 
     <main>
       <div class="degradado hide-on-small-only"></div>
@@ -188,6 +187,30 @@
       </div>
     
     </main>
+
+
+    <!-- MODAL REGISTRO -->
+    <div id="modal-registro" class="modal modal-registro">
+      <div class="modal-content">
+        <h4>Modal Registro</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+
+    <!-- MODAL INGRESO -->
+    <div id="modal-ingreso" class="modal modal-ingreso">
+      <div class="modal-content">
+        <h4>Modal Ingreso</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+
 
     <footer class="page-footer">
       <div class="container">
@@ -266,8 +289,16 @@
         var elems = document.querySelectorAll(".materialboxed");
         var instances = M.Materialbox.init(elems);
 
+        //activador del sidenav
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems);
+
+        //activadores de modal
+        var elems = document.querySelectorAll('.modal-registro');
+        var instances = M.Modal.init(elems);
+
+        var elems = document.querySelectorAll('.modal-ingreso');
+        var instances = M.Modal.init(elems);
       });
     </script>
 
