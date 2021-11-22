@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +19,6 @@
     <!-- NUESTROS CSS -->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
-
   <body>
     <header class="container">
       <div class="row">
@@ -35,7 +34,7 @@
               alt="Endurance"
             />
           </a>
-  
+
           <div class="">
             <div class="selector-lenguaje hide-on-small-only">
               <!-- selector de idioma, aparece y desaparece
@@ -46,7 +45,7 @@
               </div>
               <span class="material-icons">language</span>
             </div>
-  
+
             <div class="carrito hide-on-small-only">
               <a href="carrito.html">
                 <span class="material-icons">shopping_bag</span>
@@ -55,7 +54,7 @@
                 </span>
               </a>
             </div>
-  
+
             <div class="control-usuario">
               <span class="material-icons">account_circle</span>
 
@@ -78,13 +77,13 @@
 
         <nav class="navegacion-principal col m12 l10 push-l1 hide-on-small-only">
           <ul class="">
-            <li><a class="pag-actual" href="index.html">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="crea-tu-calzado.html">Crea tu Calzado</a></li>
             <li><a href="#">Outlet</a></li>
             <li><a href="#">Nosotros</a></li>
             <li><a href="noticias.html">Noticias</a></li>
           </ul>
-  
+
           <!-- esta es la barra de busqueda
             aparece si apretas el botón de busqueda
             y desaparece cuando clickeas afuera -->
@@ -96,7 +95,7 @@
               </label>
             </form>
           </div>
-  
+
           <div class="busqueda">
             <span class="material-icons">search</span>
           </div>
@@ -130,8 +129,8 @@
 
       <li><div class="divider"></div></li>
 
-      <li><a class="pag-actual" href="index.html">Inicio</a></li>
-      <li><a href="crea-tu-calzado.html">Crea tu Calzado</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a class="pag-actual" href="crea-tu-calzado.html">Crea tu Calzado</a></li>
       <li><a href="#">Outlet</a></li>
       <li><a href="#">Nosotros</a></li>
       <li><a href="noticias.html">Noticias</a></li>
@@ -154,256 +153,128 @@
       </li>
     </ul>
 
-    <!-- Slider Large -->
-    <div class="slider hide-on-med-and-down">
-      <ul class="slides">
-        <li>
-          <img src="img/slider-1-large.png" />
-          <!-- random image -->
-          <div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">
-              Here's our small slogan.
-            </h5>
-          </div>
-        </li>
-        <li>
-          <img src="img/slider-2-large.png" />
-          <!-- random image -->
-          <div class="caption left-align">
-            <h3>Left Aligned Caption</h3>
-            <h5 class="light grey-text text-lighten-3">
-              Here's our small slogan.
-            </h5>
-          </div>
-        </li>
-      </ul>
-    </div>
+    <main class="grey lighten-3">
+      <div class="degradado hide-on-small-only"></div>
+      <div class="degradado para-movil hide-on-med-and-up"></div>
 
-    <!-- Slider Med -->
-    <div class="slider hide-on-small-only hide-on-large-only">
-      <ul class="slides">
-        <li>
-          <img src="img/slider-1.png" />
-          <!-- random image -->
-          <div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">
-              Here's our small slogan.
-            </h5>
-          </div>
-        </li>
-        <li>
-          <img src="img/slider-2.png" />
-          <!-- random image -->
-          <div class="caption left-align">
-            <h3>Left Aligned Caption</h3>
-            <h5 class="light grey-text text-lighten-3">
-              Here's our small slogan.
-            </h5>
-          </div>
-        </li>
-      </ul>
-    </div>
+      <div class="white container main-carrito">
+        <h5 class="center-align">CARRITO DE COMPRA</h5>
 
-    <!-- Slider Small -->
-    <div class="slider hide-on-med-and-up">
-      <ul class="slides">
-        <li>
-          <img src="img/slider-1-small.png" />
-          <!-- random image -->
-          <div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">
-              Here's our small slogan.
-            </h5>
-          </div>
-        </li>
-        <li>
-          <img src="img/slider-2-small.png" />
-          <!-- random image -->
-          <div class="caption left-align">
-            <h3>Left Aligned Caption</h3>
-            <h5 class="light grey-text text-lighten-3">
-              Here's our small slogan.
-            </h5>
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <main class="main-navegation">
-      <div class="white">
-        <div class="container section">
+        <div>
           <div class="row">
-            <div class="col l5 s5">
-              <img id="infografia" src="img/infografia.png" alt="" />
-            </div>
-            <div class="col l2 s2"></div>
-            <div class="col l5 s5">
-              <div class="card card-newsletter">
-                <div class="card-content grey-text text-lighten-2">
-                  <span class="card-title white-text"
-                    >CREA TU PROPIO CALZADO</span
-                  >
-                  <p>
-                    Con una serie de pasos vas a poder diseñar tu propio
-                    producto y nosotros te lo fabricamos
-                  </p>
-                  <a href="" class="black-text">
-                    <h6>IR</h6>
-                    <h5></h5>
-                  </a>
+            <div class="col m12">
+              
+              <div class="articulo-carrito row">
+
+                <div class="eliminar-articulo">
+                  <span class="material-icons">clear</span>
+                  <div class="hide-on-small-only">ELIMINAR</div>
+                </div>
+
+                <div class="imagen-articulo col l4 m5 s12 white">
+                  <div class="nombre-calzado">
+                    Nombre dado por usuario <br>
+                    <span class="tipo-calzado grey-text">Calzado personalizado</span>
+                  </div>
+                  <img src="img/urbano.jpg" alt="">
+                </div>
+
+                <div class="datos-articulo col l8 m7 s12">
+                  <h6 class="grey-text">Talle 42</h6>
+
+                  <div class="detalles-calzado">
+                    <ul>
+                      <li class="row">
+                        <span class="col s9">caracteristica1</span> <span class="precio-detalle col s3 right-align">$12.345</span>
+                      </li>
+                      <li class="row">
+                        <span class="col s9">caracteristica2</span> <span class="precio-detalle col s3 right-align">$5.200</span>
+                      </li>
+                      <li class="row">
+                        <span class="col s9">caracteristica3</span> <span class="precio-detalle col s3 right-align">$1.345</span>
+                      </li>
+                      <li class="row">
+                        <span class="col s9">caracteristica4</span> <span class="precio-detalle col s3 right-align">$3.300</span>
+                      </li>
+                      <li class="row">
+                        <span class="col s9">caracteristica5</span> <span class="precio-detalle col s3 right-align">$310</span>
+                      </li>
+                      <li class="row">
+                        <span class="col s9">caracteristica6</span> <span class="precio-detalle col s3 right-align">$145</span>
+                      </li>
+
+                      <li><div class="divider"></div></li>
+
+                      <li class="row"> 
+                        <span class="col s9">TOTAL</span> <span class="precio-detalle-final col s3 right-align">$23.200</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="precios-calzado right-align">
+                    <h5>Precio: <span class="green-text">$23.200</span></h5>
+                    <div>
+                      <a class="btn blue accent-2" href="crea-tu-calzado.html">
+                        EDITAR
+                      </a>
+                      <a class="btn blue accent-2" href="">
+                        COMPRAR
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              
+              <div class="articulo-carrito row">
+                
+                <div class="eliminar-articulo">
+                  <span class="material-icons">clear</span>
+                  <div class="hide-on-small-only">ELIMINAR</div>
+                </div>
+
+                <div class="imagen-articulo col l4 m5 s12 white">
+                  <div class="nombre-calzado">
+                    Calzado nombre de lista <br>
+                    <span class="tipo-calzado grey-text">Outlet</span>
+                  </div>
+                  <img src="img/sport.png" alt="">
+                </div>
+
+                <div class="datos-articulo col l8 m7 s12">
+                  <h6 class="grey-text">Talle 42</h6>
+
+                  <div class="detalles-calzado">
+                    descripcion del zapato... la que figuraria en su pagina del outlet. <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla ratione, quod consectetur corrupti architecto porro distinctio repellat id culpa nam inventore obcaecati, explicabo, vitae ipsam ut cupiditate necessitatibus et.
+                  </div>
+
+                  <div class="precios-calzado right-align">
+                    <h5>Precio: <span class="green-text">$9.500</span></h5>
+                    <div>
+                      <a class="btn blue accent-2" href="">
+                        COMPRAR
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="botones-carrito z-depth-1 row">
+                <div class="col s12">
+
+                </div>
+                <div class="col s12 right-align">
+                  <button class="btn-large blue accent-3">Comprar Carrito</button>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="seccion-newsletter">
-        <div class="container section">
-          <div class="row">
-            <div class="l12 s12 m12 yellow accent-3">
-              <p class="flow-text">
-                Enterate de las últimas noticias sobre el medio ambiente
-              </p>
-            </div>
-            <div class="l12 m12 s12 yellow accent-3">
-              <a href="" class="black-text">
-                <h6>SUSCRIBITE</h6>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="white">
-        <div class="container section">
-          <div class="row">
-            <div class="col l5 s5">
-              <div class="card card-newsletter">
-                <div class="card-content grey-text text-lighten-2">
-                  <span class="card-title white-text">COLECCIÓN SPORT</span>
-                  <p>Pensado para todo tipo de actividades</p>
-                  <a href="" class="black-text">
-                    <h6>IR</h6>
-                    <h5></h5>
-                  </a>
-                  <br />
-                  <br />
-                </div>
-              </div>
-            </div>
-
-            <div class="col l2 s2"></div>
-            <div class="col l5 s5">
-              <div class="row">
-                <div class="valign-wrapper card-zapatillas">
-                  <img class="responsive-img" src="img/sport.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Zapatillas en fila -->
-      <div class="degradado valign-wrapper">
-        <div class="row"><img src="img/zapatillas.png" alt="zapatillas" /></div>
-      </div>
-
-      <div class="white">
-        <div class="container section">
-          <div class="row">
-            <div class="col l5 s5">
-              <div class="card card-newsletter">
-                <div class="card-content grey-text text-lighten-2">
-                  <span class="card-title white-text">COLECCIÓN ELEGANTE</span>
-                  <p>Tu calzado para ocasiones especiales</p>
-                  <a href="" class="black-text">
-                    <h6>IR</h6>
-                    <h5></h5>
-                  </a>
-                  <br />
-                  <br />
-                </div>
-              </div>
-            </div>
-
-            <div class="col l2 s2"></div>
-            <div class="col l5 s5">
-              <div class="card-zapatillas">
-                <img class="responsive-img" src="img/elegante.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Conoce las fundaciones... -->
-      <div class="degradado valign-wrapper">
-        <div class="row">
-          <div class="col s12 m6 l6 xl6">
-            <h6 class="white-text">
-              CONOCE LAS FUNDACIONES QUE ESTÁN A FAVOR DEL MEDIO AMBIENTE,
-              DONANDO EN UNA DE ELLAS TE REGALAMOS UN 20% DE DESCUENTO
-            </h6>
-          </div>
-          <div class="col s12 m6 l6 xl6">
-            <button class="btn yellow accent-3 black-text">CONOCELAS</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="white">
-        <div class="container section">
-          <div class="row">
-            <div class="col l5 s5">
-              <div class="card card-newsletter">
-                <div class="card-content grey-text text-lighten-2">
-                  <span class="card-title white-text">COLECCIÓN URBANA</span>
-                  <p>Tu para todos los días</p>
-                  <a href="" class="black-text">
-                    <h6>IR</h6>
-                    <h5></h5>
-                  </a>
-                  <br />
-                  <br />
-                </div>
-              </div>
-            </div>
-
-            <div class="col l2 s2"></div>
-            <div class="col l5 s5">
-              <div class="card-zapatillas">
-                <img class="responsive-img" src="img/urbano.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="seccion-newsletter">
-        <div class="container section">
-          <div class="row">
-            <div class="col l7 s7 #ffea00 yellow accent-3">
-              <p class="flow-text">
-                AL DARNOS TU CALZADO ANTIGUO <br />
-                PARA RECICLAR, OBTENES UN 5% DE DESCUENTO
-              </p>
-            </div>
-            <div class="col l5 s5 #ffea00 yellow accent-3">
-              <p class="flow-text">
-                <a href="" class="black-text">
-                  <h6>SUSCRIBITE A LAS NEWSLETTER</h6>
-                </a>
-              </p>
             </div>
           </div>
         </div>
       </div>
     </main>
-
 
     <!-- MODAL REGISTRO -->
     <div id="modal-registro" class="modal modal-registro">
@@ -504,7 +375,7 @@
 
         var elems = document.querySelectorAll(".materialboxed");
         var instances = M.Materialbox.init(elems);
-        
+
         //activador del sidenav
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems);
