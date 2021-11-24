@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Endurance</title>
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- NUESTROS CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <nav class="header-pagcompra">
+      <div class="nav-wrapper container">
+        <a class="boton-volver" href="carrito.html">
+          <span class="material-icons">arrow_back</span>
+          <div class="hide-on-small-only">VOLVER</div>
+        </a>
+        
+        <a class="" href="index.html">
+          <img
+            class="logotipo"
+            src="img/endurance-imagotipo.png"
+            alt="Endurance"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="row">
+        <div class="col s8"></div>
+        <div class="col s4"></div>
+      </div>
+    </main>
+
+    <footer>
+      
+
+    </footer>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".slider");
+        var instances = M.Slider.init(elems, {});
+
+        var elems = document.querySelectorAll(".materialboxed");
+        var instances = M.Materialbox.init(elems);
+
+        //activador del sidenav
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+
+        //activadores de modal
+        var elems = document.querySelectorAll('.modal-registro');
+        var instances = M.Modal.init(elems);
+
+        var elems = document.querySelectorAll('.modal-ingreso');
+        var instances = M.Modal.init(elems);
+      });
+    </script>
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/code.js"></script>
+  </body>
+</html>

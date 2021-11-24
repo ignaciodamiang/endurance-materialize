@@ -31,7 +31,7 @@ header > div {
 }
 
 .logotipo {
-  width: 170px;
+  width: 150px;
   display: block;
 }
 .control-usuario {
@@ -692,4 +692,34 @@ div.precios-calzado{
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+
+/* PAGINA DE COMPRA */
+.header-pagcompra{
+  background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
+  height: 85px;
+  line-height: 85px;
+}
+
+.header-pagcompra .nav-wrapper{
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header-pagcompra .boton-volver{
+  padding: 0 1rem;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  color: rgb(235, 235, 235);
+  transition: 0.3s;
+  margin-right: 16px;
+}
+.boton-volver div{
+  margin-left: 5px;
+}
+.header-pagcompra .boton-volver:hover{
+  background-color: rgba(1, 19, 43, 20%);
+  color: white;
 }
