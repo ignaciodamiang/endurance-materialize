@@ -69,4 +69,34 @@ $(document).ready(function(){
     $(".bl-derecha").addClass("hide");
     $(".bl-derecha.boton-edit-calzado").removeClass("hide");
   });
+
+
+  //pagina de compra
+  $("#cont-envio").click(function(){
+    $(".medio-de-pago").removeClass("hide");
+    $(".formulario-envio").addClass("hide");
+  });
+  $("#cont-metodo").click(function(){
+    $(".finalizar-compra").removeClass("hide");
+    $(".medio-de-pago").addClass("hide");
+  });
+  $("#cont-final").click(function(){
+
+  });
+
+  $("#atras-metodo").click(function(){
+    $(".medio-de-pago").addClass("hide");
+    $(".formulario-envio").removeClass("hide");
+  });
+  $("#atras-final").click(function(){
+    $(".finalizar-compra").addClass("hide");
+    $(".medio-de-pago").removeClass("hide");
+  });
+
+  //seleccion metodo de pago
+  $(".medio-de-pago .metodo button").click(function(){
+    $(".formulario-tarjeta").removeClass("hide");
+    $("#cont-metodo").removeClass("hide");
+  });
+
 });

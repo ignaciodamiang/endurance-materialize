@@ -286,6 +286,9 @@ footer div.divider{
   opacity: 0;
 }
 
+.social-media{
+  display: flex;
+}
 .social-media img {
   width: 24px;
   height: 24px;
@@ -323,6 +326,10 @@ footer div.divider{
 }
 .degradado.para-movil{
   height: 85px;
+}
+
+img{
+  display: block;
 }
 
 /* MAIN */
@@ -827,10 +834,18 @@ div.precios-calzado{
 
 
 /* PAGINA DE COMPRA */
+body.pag-compra{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
 .header-pagcompra{
   background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
   height: 85px;
   line-height: 85px;
+  margin-bottom: 1em;
 }
 
 .header-pagcompra .nav-wrapper{
@@ -854,4 +869,44 @@ div.precios-calzado{
 .header-pagcompra .boton-volver:hover{
   background-color: rgba(1, 19, 43, 20%);
   color: white;
+}
+
+.lista-de-calzados{
+  margin-bottom: 20px;
+}
+.lista-compra .articulo-compra{
+  margin: 5px 0;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.lista-compra .articulo-compra>.col{
+  padding: 0 5px;
+}
+.lista-compra .articulo-compra:hover{
+  opacity: 1;
+}
+
+.boton-envio{
+  padding: 10px !important;
+  padding-top: 20px;
+}
+
+#cont-final:hover{
+  background-color: #f28600  !important;
+}
+
+.opciones-de-compra h6{
+  font-weight: 600;
+}
+
+.medio-de-pago .metodo button{
+  width: 200px;
+  margin: 5px;
+}
+
+body.pag-compra main{
+  margin-bottom: 1em;
+}
+body.pag-compra footer{
+  margin-top: auto;
 }
