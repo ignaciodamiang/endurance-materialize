@@ -1,7 +1,6 @@
 body {
   /* color de fondo solo para testear */
-  /*background-color: rgb(202, 202, 202);
-*/
+  background-color: rgb(255, 255, 255);
 }
 
 /* HEADER */
@@ -420,6 +419,137 @@ footer div.divider{
   border-radius: 10px;
 }
 
+/* EMPIEZA LA SECCION DE NOSOTROS*/
+
+.nosotros-primera-seccion{
+  background-color: #ffffff;
+}
+
+.card-content-nosotros h4{
+  font-size:28px;
+  color: white;
+  text-align:initial;
+  margin-left:10px;
+  margin-right:8px;
+
+}
+
+.card-content-nosotros p{
+  font-size:15px;
+  color: white;
+  text-align:initial;
+  padding-top: 30px;
+  padding-bottom:5px;
+  margin-left:10px;
+  margin-right:8px;
+
+}
+
+.card-content-nosotros2 h4{
+  font-size:28px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom:5px;
+  text-align:initial;
+  margin-left:15px;
+  margin-right:8px;
+
+}
+
+.card-content-nosotros2 p {
+  font-size:15px;
+  color: white;
+  text-align:initial;
+  padding-top: 18px;
+  padding-bottom:45px;
+  margin-left:15px;
+  margin-right:25px;
+
+}
+
+.seccion-nuestros-materiales {
+  background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
+  width: auto;
+  height: 160px;
+}
+
+.seccion-nuestros-materiales h4 {
+  border-radius: 30px;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  margin: revert; 
+  color: #ffffff;
+}
+
+.card-left {
+  background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
+  box-shadow: 13px 13px #01132b;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.card-derecha {
+  background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
+  box-shadow: -13px -12px #01132b;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.card-inferior1 {
+  background-color: #02142c;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.card-inferior1 p {
+  background-color: #02142c;	
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size:15px;
+  color: white;
+  text-align:center;
+  padding: inherit;
+  padding-top: 0px;
+  padding-bottom:20px;
+}
+
+.card-inferior2 {
+  background-color: #02142c;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.card-inferior2 p {
+  background-color: #02142c;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size:15px;
+  color: white;
+  text-align:center;
+  padding: inherit;
+  padding-top: 0px;
+  padding-bottom:20px;
+}
+
+.card-inferior3 {
+  background-color: #02142c;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.card-inferior3 p {
+  background-color: #02142c;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size:15px;
+  color: white;
+  text-align:center;
+  padding: inherit;
+  padding-top: 0px;
+  padding-bottom:20px;
+}
+
 
 /* EMPIEZA LA SECCION DE NOTICIAS*/
 .noticias-section {
@@ -693,6 +823,8 @@ div.precios-calzado{
   bottom: 10px;
   right: 10px;
 }
+
+
 
 /* PAGINA DE COMPRA */
 .header-pagcompra{
