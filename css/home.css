@@ -1,0 +1,30 @@
+#infografia {
+  width: 600px;
+}
+
+.section-home {
+  width: 100%;
+}
+
+.section-home img {
+  display: flex;
+  justify-content: center;
+}
+
+.card-home-padre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-home {
+  width: 450px;
+  height: 450px;
+  margin: 0;
+}
+
+.card-zapatillas {
+  box-shadow: 13px 13px #01132b;
+  background-color: lightgray;
+  margin: 5%;
+}

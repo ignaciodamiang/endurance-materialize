@@ -10,7 +10,7 @@ header {
   z-index: 10;
 }
 
-header>div {
+header > div {
   position: absolute;
   width: 100%;
 }
@@ -23,7 +23,7 @@ header>div {
   align-items: center;
 }
 
-.header-superior>div {
+.header-superior > div {
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -54,7 +54,8 @@ header>div {
   cursor: pointer;
 }
 
-.carrito, .selector-lenguaje {
+.carrito,
+.selector-lenguaje {
   height: 28px;
   margin-right: 10px;
   display: flex;
@@ -67,7 +68,6 @@ header>div {
 .carrito a {
   height: 28px;
   color: rgb(240, 240, 240);
-  ;
 }
 
 .carrito .num-carrito {
@@ -84,7 +84,8 @@ header>div {
   font-size: 12px;
 }
 
-.carrito .material-icons, .selector-lenguaje .material-icons {
+.carrito .material-icons,
+.selector-lenguaje .material-icons {
   font-size: 26px;
 }
 
@@ -99,13 +100,13 @@ header>div {
   cursor: default;
 }
 
-.lenguaje-contenedor>a {
+.lenguaje-contenedor > a {
   font-size: 16px;
   color: #50647e;
   padding: 0px 4px;
 }
 
-.lenguaje-contenedor>a:hover {
+.lenguaje-contenedor > a:hover {
   color: black;
 }
 
@@ -119,7 +120,7 @@ header>div {
   padding: 1em;
 }
 
-.usuario-contenedor>div {
+.usuario-contenedor > div {
   width: 100%;
   display: flex;
   align-items: center;
@@ -129,7 +130,8 @@ header>div {
   font-weight: 600;
 }
 
-.usuario-contenedor a, .sidenav .login-registro a {
+.usuario-contenedor a,
+.sidenav .login-registro a {
   padding: 0px 10px;
   margin: 10px 5px 0px 5px;
   background-color: rgb(78, 137, 225);
@@ -340,7 +342,8 @@ footer div.divider {
 
 /* Tamaño slider */
 
-.slider, .slides {
+.slider,
+.slides {
   height: 600px !important;
 }
 
@@ -397,7 +400,9 @@ img {
   position: relative;
 }
 
-.bl-izquierda, .bh-inferior, .bl-derecha {
+.bl-izquierda,
+.bh-inferior,
+.bl-derecha {
   position: absolute;
   background-color: white;
   border-radius: 10px;
@@ -435,7 +440,8 @@ img {
   padding: 0 3px;
 }
 
-.boton-edit-calzado:hover, .boton-edit-calzado:focus {
+.boton-edit-calzado:hover,
+.boton-edit-calzado:focus {
   cursor: pointer;
   background-color: #f28600;
   color: #ffffff;
@@ -449,11 +455,14 @@ img {
   background-color: rgb(81, 141, 206);
 }
 
-.boton-crear-calzado:hover, .boton-crear-calzado:focus {
+.boton-crear-calzado:hover,
+.boton-crear-calzado:focus {
   background-color: #f28600;
 }
 
-.cerrar-bl-i, .cerrar-bh-i, .cerrar-bl-d {
+.cerrar-bl-i,
+.cerrar-bh-i,
+.cerrar-bl-d {
   background-color: rgb(221, 221, 221);
   border: none;
   border-radius: 10px;
@@ -592,14 +601,14 @@ img {
   background-color: #ffffff;
 }
 
-.pagination li.active {    
+.pagination li.active {
   background-color: #4151b3;
 }
 
 ul:not(.browser-default) {
-    padding-left: 0;
-    list-style-type: none;
-    text-align: center;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
 }
 
 .card {
@@ -673,12 +682,6 @@ ul:not(.browser-default) {
 
 #infografia {
   width: 120%;
-}
-
-.card-zapatillas {
-  box-shadow: 13px 13px #01132b;
-  background-color: lightgray;
-  margin: 5%;
 }
 
 @media screen and (max-width: 1599px) {
@@ -925,7 +928,7 @@ body.pag-compra {
   transition: 0.3s;
 }
 
-.lista-compra .articulo-compra>.col {
+.lista-compra .articulo-compra > .col {
   padding: 0 5px;
 }
 
@@ -962,40 +965,41 @@ body.pag-compra footer {
 /* OUTLET PRODUCTOS */
 
 .formulario-envio-outlet {
-    padding-left: 35px;
-    padding-right: 45px;
+  padding-left: 35px;
+  padding-right: 45px;
 }
 
 .formulario-envio-outlet h5 {
-	padding-left:8px;
+  padding-left: 8px;
 }
 
 .container-outlet {
-  padding-left:115px;
+  padding-left: 115px;
 }
 
-.calzado h5{
-  color:white;
-  margin-left:25px;
+.calzado h5 {
+  color: white;
+  margin-left: 25px;
 }
 
 .titulo-zapa {
-  font-size:18px;
-  color:white;
-  margin-left:25px;
+  font-size: 18px;
+  color: white;
+  margin-left: 25px;
 }
 
 .calzado {
-  border-radius:10px;
-  background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225)),#062552;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225)),
+    #062552;
   margin-top: 25px;
-  margin-right:70px;
-  margin-block:35px;
+  margin-right: 70px;
+  margin-block: 35px;
   margin-bottom: 30px;
 }
 
 .calzado img {
-  border-radius:10px;
+  border-radius: 10px;
   background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
   margin-top: 25px;
   margin-left: 5px;
@@ -1004,15 +1008,14 @@ body.pag-compra footer {
 }
 
 .product-container img {
-width: auto;
-height: auto;
-max-width: 100px;
-max-height: 100px;
-
+  width: auto;
+  height: auto;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .product-container:hover {
-  box-shadow: 0 8px 16px  0px rgba(0, 0,0,0.2);
+  box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .product-container {
@@ -1029,16 +1032,15 @@ max-height: 100px;
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #ffffff;
-
 }
 
-.buttom-add{
-  border:2px solid ;
+.buttom-add {
+  border: 2px solid;
   transition-duration: 0.4s;
   font-size: 16px;
   text-align: center;
   margin-bottom: 20px;
-  margin-left:50px;
+  margin-left: 50px;
   border-radius: 8px;
   padding: 15px 20px;
   color: #01132b;
@@ -1046,7 +1048,7 @@ max-height: 100px;
   font-size: 16px;
 }
 
-.buttom-add:hover{
-  background-color:#f28600 ;
+.buttom-add:hover {
+  background-color: #f28600;
   color: white;
 }
