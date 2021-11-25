@@ -28,3 +28,17 @@
   background-color: lightgray;
   margin: 5%;
 }
+
+.button-yellow {
+  width: 150px;
+  height: 45px;
+  border-radius: 30px;
+  background-color: #ffea00;
+  font-size: 19px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+#button-conocelas {
+  margin-top: 60px;
+}
