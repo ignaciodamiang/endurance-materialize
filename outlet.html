@@ -156,6 +156,104 @@
 
         <div class="degradado hide-on-small-only"></div>
         <div class="degradado para-movil hide-on-med-and-up"></div>
+		
+		<section class="formulario-envio-outlet">
+            <h5>OUTLET:OFERTAS EN CALZADO</h5>
+            <form action="#" class="row">
+              
+                <div class="input-field col s4">
+			        <div class= "select-wrapper">
+					  <label>TIPO DE CALZADO*</label>
+                      <select>
+                        <option value="1" selected >DEPORTIVO</option>
+                        <option value="2">ELEGANTE</option>
+				        <option value="3">URBANO</option>
+                      </select>
+				    </div>                 
+                </div>
+			  
+			    <div class="input-field col s4">
+			        <div class= "select-wrapper">
+					  <label>TALLE*</label>
+			          <select>
+                        <option value="1" selected >34</option>
+				        <option value="2">34.5</option>
+				        <option value="3">35</option>
+                        <option value="4">35.5</option>
+				        <option value="5">36</option>
+				        <option value="6">36.5</option>
+				        <option value="7">37</option>
+				        <option value="8">37.5</option>
+				        <option value="9">38</option>
+				        <option value="10">38.5</option>
+				        <option value="11">39</option>
+				        <option value="12">39.5</option>
+				        <option value="13">40</option>
+				        <option value="14">40.5</option>
+				        <option value="15">41</option>
+				        <option value="16">41.5</option>
+				        <option value="17">42</option>
+				        <option value="18">42.5</option>
+				        <option value="19">43</option>
+				        <option value="20">43.5</option>
+				        <option value="21">44</option>
+				        <option value="22">44.5</option>
+				        <option value="23">45</option>
+                      </select>
+					</div>                   
+                </div>
+			  
+			    <div class="input-field col s4">
+				    <div class= "select-wrapper">
+					  <label>PRECIO*</label>
+                      <select>
+                        <option value="1" selected >$12.000.-</option>
+				        <option value="2">$15.000.-</option>
+				        <option value="3">$17.000.-</option>
+                        <option value="4">$20.000.-</option>
+				        <option value="5">$22.000.-</option>
+				        <option value="6">$25.000.-</option>
+				        <option value="7">$30.000.-</option>
+				        <option value="8">$35.000.-</option>
+                      </select>
+					</div>             
+                </div>
+			  
+			    <div class="input-field col s4">
+			        <div class= "select-wrapper">
+					  <label>COLOR*</label>
+                      <select>
+                        <option value="1" selected >BLANCO</option>
+				        <option value="2">NEGRO</option>
+				        <option value="3">AZUL</option>
+                        <option value="4">ROJO</option>
+				        <option value="5">VERDE</option>
+				        <option value="6">AMARILLO</option>
+				        <option value="7">NARANJA</option>
+				        <option value="8">ROSA</option>
+				        <option value="9">VIOLETA</option>
+				        <option value="10">MARRÓN</option>
+                      </select>
+					</div>
+                </div>
+			  
+			    <div class="input-field col s4">
+			        <div class= "select-wrapper">
+					  <label>ORDENAR POR*</label>
+                      <select>
+                        <option value="1" selected >PRECIO(DE MENOR A MAYOR)</option>
+				        <option value="2">NOVEDADES</option>
+				        <option value="3">LOS MÁS VENDIDOS</option>
+                        <option value="4">PRECIO(DE MAYOR A MENOR)</option>
+                      </select>
+					</div>
+                </div>
+              
+                <div class="boton-envio col s12 right-align">
+                  <button class="btn-large blue darken-2" id="cont-final">Filtrar</button> 
+                </div>
+            </form>
+        </section>
         
 		<div class="container-outlet section">
             <div class="row">
@@ -355,29 +453,31 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var elems = document.querySelectorAll(".slider");
-            var instances = M.Slider.init(elems, {});
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".slider");
+        var instances = M.Slider.init(elems, {});
 
-            var elems = document.querySelectorAll(".materialboxed");
-            var instances = M.Materialbox.init(elems);
+        var elems = document.querySelectorAll(".materialboxed");
+        var instances = M.Materialbox.init(elems);
 
-            //activador del sidenav
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
+        //activador del sidenav
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
 
-            //activadores de modal
-            var elems = document.querySelectorAll('.modal-registro');
-            var instances = M.Modal.init(elems);
+        //activadores de modal
+        var elems = document.querySelectorAll('.modal-registro');
+        var instances = M.Modal.init(elems);
 
-            var elems = document.querySelectorAll('.modal-ingreso');
-            var instances = M.Modal.init(elems);
-        });
+        var elems = document.querySelectorAll('.modal-ingreso');
+        var instances = M.Modal.init(elems);
+
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+      });
     </script>
 
 
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/code.js"></script>
-</body>
-
+  </body>
 </html>

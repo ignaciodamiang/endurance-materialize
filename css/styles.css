@@ -835,10 +835,6 @@ ul:not(.browser-default) {
   font-size: 16px;
 }
 
-.articulo-carrito .detalles-calzado ul {
-  text-align: left;
-}
-
 .detalles-calzado .row {
   padding: 2px 10px;
 }
@@ -964,6 +960,15 @@ body.pag-compra footer {
 }
 
 /* OUTLET PRODUCTOS */
+
+.formulario-envio-outlet {
+    padding-left: 35px;
+    padding-right: 45px;
+}
+
+.formulario-envio-outlet h5 {
+	padding-left:8px;
+}
 
 .container-outlet {
   padding-left:115px;
