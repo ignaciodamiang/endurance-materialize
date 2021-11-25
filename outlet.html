@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Endurance</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- NUESTROS CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="container">
+        <div class="row">
+            <div class="header-superior col s12">
+                <a href="#" class="sidenav-trigger white-text hide-on-med-and-up" data-target="menu-side">
+                    <span class="material-icons">menu</span>
+                </a>
+
+                <a href="index.html">
+                    <img class="logotipo" src="img/endurance-imagotipo.png" alt="Endurance" />
+                </a>
+
+                <div class="">
+                    <div class="selector-lenguaje hide-on-small-only">
+                        <!-- selector de idioma, aparece y desaparece
+              según haces click en el icono de lenguaje -->
+                        <div class="lenguaje-contenedor hide">
+                            <a href="#"><span>Español</span></a>
+                            <a href="#"><span>English</span></a>
+                        </div>
+                        <span class="material-icons">language</span>
+                    </div>
+
+                    <div class="carrito hide-on-small-only">
+                        <a href="carrito.html">
+                            <span class="material-icons">shopping_bag</span>
+                            <span class="num-carrito">
+                                <b>2</b>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="control-usuario">
+                        <span class="material-icons">account_circle</span>
+
+                        <!-- cuadro de usuario
+            se activa si das click en el icono
+            se desactiva si das click afuera -->
+                        <div class="usuario-contenedor z-depth-3 hide">
+                            <div>
+                                <span class="material-icons">account_circle</span>
+                                Invitado
+                            </div>
+                            <div>
+                                <a class="btn modal-trigger" href="#modal-ingreso">Ingresar</a>
+                                <a class="btn modal-trigger" href="#modal-registro">Registrarse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navegacion-principal col m12 l10 push-l1 hide-on-small-only">
+                <ul class="">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="crea-tu-calzado.html">Crea tu Calzado</a></li>
+                    <li><a class="pag-actual" href="outlet.html">Outlet</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                </ul>
+
+                <!-- esta es la barra de busqueda
+          aparece si apretas el botón de busqueda
+          y desaparece cuando clickeas afuera -->
+                <div class="busqueda-activada hide">
+                    <form action="">
+                        <input type="search" name="search" id="search" placeholder="Buscar...">
+                        <label class="hide" for="search">
+                            <input type="submit" value="">
+                        </label>
+                    </form>
+                </div>
+
+                <div class="busqueda">
+                    <span class="material-icons">search</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- sidenav, barra lateral de la version movil -->
+    <ul class="sidenav" id="menu-side">
+        <li>
+            <div class="user-view">
+                <div class="background"></div>
+                <div class="datos-usuario">
+                    <a href="#"><span class="material-icons">account_circle</span></a>
+                    <a href="#"><span class="white-text nombre">Invitado</span></a>
+                    <div class="login-registro">
+                        <a class="btn modal-trigger" href="#modal-ingreso">Ingresar</a>
+                        <a class="btn modal-trigger" href="#modal-registro">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li class="carrito-compra">
+            <a href="carrito.html">
+                <span class="material-icons">shopping_bag</span>
+                <span>Carrito</span>
+                <span class="items-en-carrito">2</span>
+            </a>
+        </li>
+
+        <li>
+            <div class="divider"></div>
+        </li>
+
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="crea-tu-calzado.html">Crea tu Calzado</a></li>
+        <li><a class="pag-actual"  href="outlet.html">Outlet</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+
+        <li>
+            <div class="divider"></div>
+        </li>
+
+        <li class="sidenav-busqueda">
+            <form action="">
+                <input type="search" name="search" id="search" placeholder="Buscar...">
+                <label class="hide" for="search">
+                    <input type="submit" value="">
+                </label>
+            </form>
+            <span class="material-icons">search</span>
+        </li>
+
+        <li class="selector-lenguaje-sn">
+            <a href="#"><span>Español</span></a>
+            <a href="#"><span>English</span></a>
+        </li>
+    </ul>
+
+    <main class="main-navegation">
+        <!-- todo el contenido de la página -->
+
+        <div class="degradado hide-on-small-only"></div>
+        <div class="degradado para-movil hide-on-med-and-up"></div>
+        
+		<div class="container-outlet section">
+            <div class="row">
+
+                <div class="calzado col l5 s5">
+
+                    <img src="img/pair-of-trainers1.jpg">
+                    <h5>$15.000.-</h5>
+					<span class="titulo-zapa">ZAPATILLAS DEPORTIVAS SPRING</span>
+                    <button class="buttom-add">Agregar</button>
+
+
+                </div>
+			    <div class="col l2 s2">
+
+                </div>
+                <div class="calzado col l5 s5">
+
+                    <img src="img/pair-of-trainers1.jpg">
+                    <h5>$20.000.-</h5>
+					<span class="titulo-zapa">ZAPATILLAS DEPORTIVAS WINTER</span>
+                    <button class="buttom-add">Agregar</button>
+
+
+                </div>
+                <div class="calzado col l5 s5">
+
+            
+                    <img src="img/pair-of-trainers1.jpg">				
+                    <h5>$25.000.-</h5>
+					<span class="titulo-zapa">ZAPATILLAS DEPORTIVAS AUTUMN</span>
+                    <button class="buttom-add">Agregar</button>
+
+
+                </div>
+			    <div class="col l2 s2">
+
+                </div>
+                <div class="calzado col l5 s5">
+
+                    <img src="img/elegante.jpg">				
+                    <h5>$12.000.-</h5>
+					<span class="titulo-zapa">CALZADO ELEGANTE SCIROCCO</span>
+                    <button class="buttom-add">Agregar</button>
+
+
+                </div>
+                <div class="calzado col l5 s5">
+
+                    <img src="img/elegante.jpg">
+                    <h5>$17.000.-</h5>
+					<span class="titulo-zapa">CALZADO ELEGANTE VENTO</span>
+                    <button class="buttom-add">Agregar</button>
+
+
+                </div>
+			    <div class="col l2 s2">
+
+                </div>
+                <div class="calzado col l5 s5">
+
+                    <img src="img/elegante.jpg">
+                    <h5>$22.000.-</h5>
+					<span class="titulo-zapa">CALZADO ELEGANTE FIESTA</span>
+                    <button class="buttom-add">Agregar</button>
+
+
+                </div>
+                <div class="calzado col l5 s5">
+
+                    <img src="img/urbano.jpg">
+                    <h5>$30.000.-</h5>
+					<span class="titulo-zapa">ZAPATILLAS URBANAS MONDEO</span>
+                    <button class="buttom-add">Agregar</button>
+
+
+                </div>
+			    <div class="col l2 s2">
+
+                </div>
+                <div class="calzado col l5 s5">
+
+                    <img src="img/urbano.jpg">
+                    <h5>$35.000.-</h5>
+					<span class="titulo-zapa">ZAPATILLAS URBANAS FOCUS</span>
+                    <button class="buttom-add">Agregar</button>
+
+
+                </div>
+			
+            </div>
+		</div>
+		
+		<ul class="pagination">
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+		    <li class="waves-effect"><a href="#!">4</a></li>
+            <li class="waves-effect"><a href="#!">5</a></li>
+			<li class="waves-effect"><a href="#!">6</a></li>
+			<li class="waves-effect"><a href="#!">7</a></li>
+			<li class="waves-effect"><a href="#!">8</a></li>
+			<li class="waves-effect"><a href="#!">9</a></li>
+			<li class="waves-effect"><a href="#!">10</a></li>
+            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+
+    </main>
+    
+
+    <!-- MODAL REGISTRO -->
+    <div id="modal-registro" class="modal modal-registro">
+        <div class="modal-content">
+            <h4>Modal Registro</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+    <!-- MODAL INGRESO -->
+    <div id="modal-ingreso" class="modal modal-ingreso">
+        <div class="modal-content">
+            <h4>Modal Ingreso</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col m5 s12">
+                    <h6 class="white-text">
+                        Unite a más de 5000 personas que quieren ser parte del cambio
+                        ambiental.
+                    </h6>
+
+                    <form action="">
+                        <div class="input-field">
+                            <input id="email" type="email" class="validate" />
+                            <label for="email">Email</label>
+                        </div>
+                        <input class="btn enviar-email" type="submit" value="Unite" />
+                    </form>
+                </div>
+
+                <div class="col s12 divider hide-on-med-and-up"></div>
+
+                <div class="col m4 s12 hide-on-small-only">
+                    <h6 class="white-text">Comunidad Endurance Argentina</h6>
+                    <p class="grey-text">
+                        Nos esforzamos por educar y colaborar con personas de ideas a
+                        fines para marcar una diferencia ambiental y social. Juntos
+                        podemos lograr un impacto.
+                    </p>
+                    <a href="nosotros.html" class="yellow-text">Acerca de nosotros</a>
+                </div>
+
+                <div class="col m3 s12">
+                    <h6>Contacto</h6>
+
+                    <div class="valign-wrapper">
+                        <span class="material-icons">email</span>
+                        <div class="grey-text">info@endurance.com</div>
+                    </div>
+
+                    <div class="valign-wrapper">
+                        <span class="material-icons">whatsapp</span>
+                        <div class="grey-text">+54 1161846612</div>
+                    </div>
+
+                    <p class="grey-text">Atención al cliente las 24 horas</p>
+                    <div class="social-media">
+                        <a href="https://facebook.com" target="_black"><img src="img/Facebook.svg" alt="Facebook" /></a>
+                        <a href="https://twitter.com" target="_black"><img src="img/Twitter.svg" alt="Twitter" /></a>
+                        <a href="https://instagram.com" target="_black"><img src="img/Instagram.svg"
+                                alt="Instagram" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                Al registrarte aceptas nuestra
+                <a class="yellow-text" href="">Politica de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var elems = document.querySelectorAll(".slider");
+            var instances = M.Slider.init(elems, {});
+
+            var elems = document.querySelectorAll(".materialboxed");
+            var instances = M.Materialbox.init(elems);
+
+            //activador del sidenav
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+
+            //activadores de modal
+            var elems = document.querySelectorAll('.modal-registro');
+            var instances = M.Modal.init(elems);
+
+            var elems = document.querySelectorAll('.modal-ingreso');
+            var instances = M.Modal.init(elems);
+        });
+    </script>
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/code.js"></script>
+</body>
+
+</html>
