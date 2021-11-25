@@ -145,6 +145,7 @@ header > div {
   height: 100vh;
   overflow-y: visible;
   max-width: 100%;
+  text-align: left !important;
 }
 
 .sidenav-trigger span.material-icons {
@@ -838,6 +839,10 @@ ul:not(.browser-default) {
   font-size: 16px;
 }
 
+.articulo-carrito .detalles-calzado ul{
+  text-align: left !important;
+}
+
 .detalles-calzado .row {
   padding: 2px 10px;
 }
@@ -925,15 +930,10 @@ body.pag-compra {
 .lista-compra .articulo-compra {
   margin: 5px 0;
   opacity: 0.7;
-  transition: 0.3s;
 }
 
 .lista-compra .articulo-compra > .col {
   padding: 0 5px;
-}
-
-.lista-compra .articulo-compra:hover {
-  opacity: 1;
 }
 
 .boton-envio {
