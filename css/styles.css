@@ -596,6 +596,83 @@ img {
   padding-bottom: 20px;
 }
 
+/* MODAL INGRESO Y REGISTRO*/
+
+.modal-ingreso {
+    z-index: 1028;
+    border-radius:20px;
+    opacity: 1;
+	width:50%;
+    height:90%;
+    top: 12%;
+    transform: scaleX(1) scaleY(1);
+}
+
+.modal-registro {
+    z-index: 1028;
+    border-radius:20px;
+    opacity: 1;
+	width:50%;
+    height:90%;
+    top: 12%;
+    transform: scaleX(1) scaleY(1);
+}
+
+.modal-ingreso .modal-content h4{
+  text-align: center; 
+}
+
+.modal-registro .modal-content h4{
+  padding-left:40px; 
+}
+
+.modal-registro .modal-content h5{
+  padding-left:40px; 
+}
+
+.articulo-compra-ingreso img {
+  max-width:10%; 
+}
+
+.modal-ingreso .modal-content p {
+  text-align:center;
+  font-size:18px;  
+}
+
+.input-field-ingreso1 {
+  margin-left:120px !important;
+  margin-top:-8px !important;
+}
+
+.boton-envio-ingreso {
+  margin-left:260px !important;  
+}
+
+.articulo-compra-ingreso {
+  padding-left:10px;
+  padding-left:150px;  
+}
+
+.datos-articulo h6{
+ padding-bottom:5px;
+}
+
+.texto-contraseña p {
+  margin-left:232px;	
+}
+
+.modal-footer-ingreso {
+  padding-left:165px;
+  background-color:Yellow;
+  font-size:15px;
+}
+
+.modal-footer-registro {
+  text-align:center;
+  background-color:Yellow;
+  font-size:15px;
+}
+
 /* EMPIEZA LA SECCION DE NOTICIAS*/
 
 .noticias-section {
