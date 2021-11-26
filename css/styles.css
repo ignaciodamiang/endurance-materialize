@@ -432,16 +432,19 @@ img {
 .bl-izquierda {
   top: 2%;
   left: 0px;
+  z-index: 11;
 }
 
 .bh-inferior {
   bottom: 2%;
   left: 0px;
+  z-index: 11;
 }
 
 .bl-derecha {
   top: 2%;
   right: 0px;
+  z-index: 11;
 }
 
 .boton-edit-calzado {
