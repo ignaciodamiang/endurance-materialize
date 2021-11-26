@@ -348,6 +348,13 @@ footer div.divider {
   height: 600px !important;
 }
 
+.slider h2{
+  margin: 10px 0;
+}
+.slider h4{
+  margin: 10px 0;
+}
+
 /* Quito margen inferior a las filas */
 
 .row {
@@ -712,6 +719,7 @@ ul:not(.browser-default) {
 
 .card .card-title {
   font-weight: bolder;
+  text-shadow: 0px 3px 5px black;
 }
 
 .card h6 {
@@ -772,10 +780,9 @@ ul:not(.browser-default) {
 @media screen and (max-width: 1599px) {
  
   .card .card-title{
-    font-size: 15px;
 }
 .card .card-content{
-    font-size: 5px;
+
     text-justify: auto;
 }
 .cardright{
@@ -1115,9 +1122,6 @@ body.pag-compra footer {
   border-radius: 10px;
   background: linear-gradient(to right, rgb(32, 54, 140), rgb(78, 137, 225));
   margin-top: 25px;
-  margin-left: 5px;
-  margin-bottom: 10px;
-  margin-right: 10px;
 }
 
 .product-container img {
