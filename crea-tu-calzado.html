@@ -1,504 +1,418 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <title>Endurance</title>
 
-    <!--Import Google Icon Font-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <!-- NUESTROS CSS -->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/crea-tu-calzado.css" rel="stylesheet" href="" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <title>Endurance</title>
 
-  <body>
-    <header class="container">
-      <div class="row">
-        <div class="header-superior col s12">
-          <a
-            href="#"
-            class="sidenav-trigger white-text hide-on-med-and-up"
-            data-target="menu-side"
-          >
-            <span class="material-icons">menu</span>
-          </a>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!-- NUESTROS CSS -->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/crea-tu-calzado.css" rel="stylesheet" href="" />
+</head>
 
-          <a href="index.html">
-            <img
-              class="logotipo"
-              src="img/endurance-imagotipo.png"
-              alt="Endurance"
-            />
-          </a>
+<body>
+  <header class="container">
+    <div class="row">
+      <div class="header-superior col s12">
+        <a href="#" class="sidenav-trigger white-text hide-on-med-and-up" data-target="menu-side">
+          <span class="material-icons">menu</span>
+        </a>
 
-          <div class="">
-            <div class="selector-lenguaje hide-on-small-only">
-              <!-- selector de idioma, aparece y desaparece
+        <a href="index.html">
+          <img class="logotipo" src="img/endurance-imagotipo.png" alt="Endurance" />
+        </a>
+
+        <div class="">
+          <div class="selector-lenguaje hide-on-small-only">
+            <!-- selector de idioma, aparece y desaparece
                 según haces click en el icono de lenguaje -->
-              <div class="lenguaje-contenedor hide">
-                <a href="#"><span>Español</span></a>
-                <a href="#"><span>English</span></a>
-              </div>
-              <span class="material-icons">language</span>
+            <div class="lenguaje-contenedor hide">
+              <a href="#"><span>Español</span></a>
+              <a href="#"><span>English</span></a>
             </div>
+            <span class="material-icons">language</span>
+          </div>
 
-            <div class="carrito hide-on-small-only">
-              <a href="carrito.html">
-                <span class="material-icons">shopping_bag</span>
-                <span class="num-carrito">
-                  <b>2</b>
-                </span>
-              </a>
-            </div>
+          <div class="carrito hide-on-small-only">
+            <a href="carrito.html">
+              <span class="material-icons">shopping_bag</span>
+              <span class="num-carrito">
+                <b>2</b>
+              </span>
+            </a>
+          </div>
 
-            <div class="control-usuario">
-              <span class="material-icons">account_circle</span>
+          <div class="control-usuario">
+            <svg viewBox="479.078 240 20 20" width="28" height="28">
+              <path d="M 489.078 240 C 483.558 240 479.078 244.48 479.078 250 C 479.078 255.52 483.558 260 489.078 260 C 494.598 260 499.078 255.52 499.078 250 C 499.078 244.48 494.598 240 489.078 240 Z" style="fill: rgb(240, 240, 240);"></path>
+              <path d="M 489.078 242.9 C 490.738 242.9 492.078 244.24 492.078 245.9 C 492.078 247.56 490.738 248.9 489.078 248.9 C 487.418 248.9 486.078 247.56 486.078 245.9 C 486.078 244.24 487.418 242.9 489.078 242.9 Z M 489.078 257.1 C 486.578 257.1 484.368 255.82 483.078 253.88 C 483.108 251.89 487.078 250.8 489.078 250.8 C 491.068 250.8 495.048 251.89 495.078 253.88 C 493.788 255.82 491.578 257.1 489.078 257.1 Z" style="fill: rgb(78, 137, 225);"></path>
+            </svg>
 
-              <!-- cuadro de usuario
+            <!-- cuadro de usuario
               se activa si das click en el icono
               se desactiva si das click afuera -->
-              <div class="usuario-contenedor z-depth-3 hide">
-                <div>
-                  <span class="material-icons">account_circle</span>
-                  Invitado
-                </div>
-                <div>
-                  <a class="btn modal-trigger" href="#modal-ingreso"
-                    >Ingresar</a
-                  >
-                  <a class="btn modal-trigger" href="#modal-registro"
-                    >Registrarse</a
-                  >
-                </div>
+            <div class="usuario-contenedor z-depth-3 hide">
+              <div>
+                <span class="material-icons">account_circle</span>
+                Invitado
+              </div>
+              <div>
+                <a class="btn modal-trigger" href="#modal-ingreso">Ingresar</a>
+                <a class="btn modal-trigger" href="#modal-registro">Registrarse</a>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <nav
-          class="navegacion-principal col m12 l10 push-l1 hide-on-small-only"
-        >
-          <ul class="">
-            <li><a href="index.html">Inicio</a></li>
-            <li>
-              <a class="pag-actual" href="crea-tu-calzado.html"
-                >Crea tu Calzado</a
-              >
-            </li>
-            <li><a href="outlet.html">Outlet</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="noticias.html">Noticias</a></li>
-          </ul>
+      <nav class="navegacion-principal col m12 l10 push-l1 hide-on-small-only">
+        <ul class="">
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a class="pag-actual" href="crea-tu-calzado.html">Crea tu Calzado</a>
+          </li>
+          <li><a href="outlet.html">Outlet</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+        </ul>
 
-          <!-- esta es la barra de busqueda
+        <!-- esta es la barra de busqueda
             aparece si apretas el botón de busqueda
             y desaparece cuando clickeas afuera -->
-          <div class="busqueda-activada hide">
-            <form action="">
-              <input
-                type="search"
-                name="search"
-                id="search"
-                placeholder="Buscar..."
-              />
-              <label class="hide" for="search">
-                <input type="submit" value="" />
-              </label>
-            </form>
-          </div>
+        <div class="busqueda-activada hide">
+          <form action="">
+            <input type="search" name="search" id="search" placeholder="Buscar..." />
+            <label class="hide" for="search">
+              <input type="submit" value="" />
+            </label>
+          </form>
+        </div>
 
-          <div class="busqueda">
-            <span class="material-icons">search</span>
-          </div>
-        </nav>
-      </div>
-    </header>
+        <div class="busqueda">
+          <span class="material-icons">search</span>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-    <!-- sidenav, barra lateral de la version movil -->
-    <ul class="sidenav" id="menu-side">
-      <li>
-        <div class="user-view">
-          <div class="background"></div>
-          <div class="datos-usuario">
-            <a href="#"><span class="material-icons">account_circle</span></a>
-            <a href="#"><span class="white-text nombre">Invitado</span></a>
-            <div class="login-registro">
-              <a class="btn modal-trigger" href="#modal-ingreso">Ingresar</a>
-              <a class="btn modal-trigger" href="#modal-registro"
-                >Registrarse</a
-              >
-            </div>
+  <!-- sidenav, barra lateral de la version movil -->
+  <ul class="sidenav" id="menu-side">
+    <li>
+      <div class="user-view">
+        <div class="background"></div>
+        <div class="datos-usuario">
+          <a href="#"><span class="material-icons">account_circle</span></a>
+          <a href="#"><span class="white-text nombre">Invitado</span></a>
+          <div class="login-registro">
+            <a class="btn modal-trigger" href="#modal-ingreso">Ingresar</a>
+            <a class="btn modal-trigger" href="#modal-registro">Registrarse</a>
           </div>
         </div>
-      </li>
+      </div>
+    </li>
 
-      <li class="carrito-compra">
-        <a href="carrito.html">
-          <span class="material-icons">shopping_bag</span>
-          <span>Carrito</span>
-          <span class="items-en-carrito">2</span>
-        </a>
-      </li>
+    <li class="carrito-compra">
+      <a href="carrito.html">
+        <span class="material-icons">shopping_bag</span>
+        <span>Carrito</span>
+        <span class="items-en-carrito">2</span>
+      </a>
+    </li>
 
-      <li><div class="divider"></div></li>
+    <li>
+      <div class="divider"></div>
+    </li>
 
-      <li><a href="index.html">Inicio</a></li>
-      <li>
-        <a class="pag-actual" href="crea-tu-calzado.html">Crea tu Calzado</a>
-      </li>
-      <li><a href="#">Outlet</a></li>
-      <li><a href="#">Nosotros</a></li>
-      <li><a href="noticias.html">Noticias</a></li>
+    <li><a href="index.html">Inicio</a></li>
+    <li>
+      <a class="pag-actual" href="crea-tu-calzado.html">Crea tu Calzado</a>
+    </li>
+    <li><a href="#">Outlet</a></li>
+    <li><a href="#">Nosotros</a></li>
+    <li><a href="noticias.html">Noticias</a></li>
 
-      <li><div class="divider"></div></li>
+    <li>
+      <div class="divider"></div>
+    </li>
 
-      <li class="sidenav-busqueda">
-        <form action="">
-          <input
-            type="search"
-            name="search"
-            id="search"
-            placeholder="Buscar..."
-          />
-          <label class="hide" for="search">
-            <input type="submit" value="" />
-          </label>
-        </form>
-        <span class="material-icons">search</span>
-      </li>
+    <li class="sidenav-busqueda">
+      <form action="">
+        <input type="search" name="search" id="search" placeholder="Buscar..." />
+        <label class="hide" for="search">
+          <input type="submit" value="" />
+        </label>
+      </form>
+      <span class="material-icons">search</span>
+    </li>
 
-      <li class="selector-lenguaje-sn">
-        <a href="#"><span>Español</span></a>
-        <a href="#"><span>English</span></a>
-      </li>
-    </ul>
+    <li class="selector-lenguaje-sn">
+      <a href="#"><span>Español</span></a>
+      <a href="#"><span>English</span></a>
+    </li>
+  </ul>
 
-    <main>
-      <div class="degradado hide-on-small-only"></div>
-      <div class="degradado para-movil hide-on-med-and-up"></div>
+  <main>
+    <div class="degradado hide-on-small-only"></div>
+    <div class="degradado para-movil hide-on-med-and-up"></div>
 
-      <div class="container">
-        <div class="row">
-          <div class="creador-calzado col s12">
-            <button class="bl-izquierda boton-edit-calzado z-depth-2">
-              <span class="material-icons">edit</span>
-              <span class="hide-on-small-only">Caracteristicas</span>
+    <div class="container">
+      <div class="row">
+        <div class="creador-calzado col s12">
+          <button class="bl-izquierda boton-edit-calzado z-depth-2">
+            <span class="material-icons">edit</span>
+            <span class="hide-on-small-only">Caracteristicas</span>
+          </button>
+
+          <div class="bl-izquierda z-depth-2 hide">
+            <button class="cerrar-bl-i">
+              <span class="material-icons">chevron_left</span>
             </button>
 
-            <div class="bl-izquierda z-depth-2 hide">
-              <button class="cerrar-bl-i">
-                <span class="material-icons">chevron_left</span>
-              </button>
-
-              <ul id="dropdown2" class="dropdown-content">
-                <li>
-                  <a class="blue-text" href="#!">Femenino</a>
-                </li>
-                <li>
-                  <a class="blue-text" href="#!">Masculino</a>
-                </li>
-                <li><a class="blue-text" href="#!">Otro</a></li>
-              </ul>
-              <a
-                class="
-                  btn
-                  blue
-                  darken-3
-                  dropdown-trigger
-                  waves-effect waves-light
-                "
-                href="#!"
-                data-target="dropdown2"
-                >Sexo</a
-              >
-
-              <ul id="dropdown3" class="dropdown-content">
-                <li>
-                  <a class="blue-text" href="#!">42</a>
-                </li>
-                <li>
-                  <a class="blue-text" href="#!">41</a>
-                </li>
-                <li><a class="blue-text" href="#!">40</a></li>
-                <li><a class="blue-text" href="#!">39</a></li>
-              </ul>
-              <a
-                class="
-                  btn
-                  blue
-                  darken-3
-                  dropdown-trigger
-                  waves-effect waves-light
-                "
-                href="#!"
-                data-target="dropdown3"
-                >Talle</a
-              >
-
-              <ul id="dropdown4" class="dropdown-content">
-                <li>
-                  <a class="blue-text" href="#!">Urbano</a>
-                </li>
-                <li>
-                  <a class="blue-text" href="#!">Elegante</a>
-                </li>
-                <li><a class="blue-text" href="#!">Sport</a></li>
-              </ul>
-              <a
-                class="
-                  btn
-                  blue
-                  darken-3
-                  dropdown-trigger
-                  waves-effect waves-light
-                "
-                href="#!"
-                data-target="dropdown4"
-                >Estilo</a
-              >
-
-              <ul id="dropdown5" class="dropdown-content">
-                <li>
-                  <a class="blue-text" href="#!">Azul</a>
-                </li>
-                <li>
-                  <a class="blue-text" href="#!">Negro</a>
-                </li>
-                <li><a class="blue-text" href="#!">Marrón</a></li>
-              </ul>
-              <a
-                class="
-                  btn
-                  blue
-                  darken-3
-                  dropdown-trigger
-                  waves-effect waves-light
-                "
-                href="#!"
-                data-target="dropdown5"
-                >Color</a
-              >
-
-              <ul id="dropdown6" class="dropdown-content">
-                <li>
-                  <a class="blue-text" href="#!">Caucho reciclado</a>
-                </li>
-                <li>
-                  <a class="blue-text" href="#!">Caucho ecológico</a>
-                </li>
-                <li>
-                  <a class="blue-text" href="#!">Goma sintética Endurance</a>
-                </li>
-              </ul>
-              <a
-                class="
-                  btn
-                  blue
-                  darken-3
-                  dropdown-trigger
-                  waves-effect waves-light
-                "
-                href="#!"
-                data-target="dropdown6"
-                >Suela</a
-              >
-
-              <ul id="dropdown7" class="dropdown-content">
-                <li>
-                  <a class="blue-text" href="#!">Tela sintética Endurance</a>
-                </li>
-                <li>
-                  <a class="blue-text" href="#!">Tela de fibra de coco</a>
-                </li>
-                <li><a class="blue-text" href="#!">Cuero ecológico</a></li>
-              </ul>
-              <a
-                class="
-                  btn
-                  blue
-                  darken-3
-                  dropdown-trigger
-                  waves-effect waves-light
-                "
-                href="#!"
-                data-target="dropdown7"
-                >Cuerpo del calzado</a
-              >
-
-              <ul id="dropdown8" class="dropdown-content">
-                <li>
-                  <a class="blue-text" href="#!">Tela sintética Endurance</a>
-                </li>
-                <li>
-                  <a class="blue-text" href="#!">Fibra de banana</a>
-                </li>
-              </ul>
-              <a
-                class="
-                  btn
-                  blue
-                  darken-3
-                  dropdown-trigger
-                  waves-effect waves-light
-                "
-                href="#!"
-                data-target="dropdown8"
-                >Cordones</a
-              >
-            </div>
-            <ul id="chips">
-              <li class="">
-                <div class="chip">
-                  Sexo: femenino
-                  <i class="close material-icons">close</i>
-                </div>
+            <ul id="dropdown2" class="dropdown-content">
+              <li>
+                <a class="blue-text" href="#!">Femenino</a>
               </li>
               <li>
-                <div class="chip">
-                  Talle: 39
-                  <i class="close material-icons">close</i>
-                </div>
+                <a class="blue-text" href="#!">Masculino</a>
+              </li>
+              <li><a class="blue-text" href="#!">Otro</a></li>
+            </ul>
+            <a class="
+                  btn
+                  blue
+                  darken-3
+                  dropdown-trigger
+                  waves-effect waves-light
+                " href="#!" data-target="dropdown2">Sexo</a>
+
+            <ul id="dropdown3" class="dropdown-content">
+              <li>
+                <a class="blue-text" href="#!">42</a>
               </li>
               <li>
-                <div class="chip">
-                  Estilo: urbano
-                  <i class="close material-icons">close</i>
-                </div>
+                <a class="blue-text" href="#!">41</a>
+              </li>
+              <li><a class="blue-text" href="#!">40</a></li>
+              <li><a class="blue-text" href="#!">39</a></li>
+            </ul>
+            <a class="
+                  btn
+                  blue
+                  darken-3
+                  dropdown-trigger
+                  waves-effect waves-light
+                " href="#!" data-target="dropdown3">Talle</a>
+
+            <ul id="dropdown4" class="dropdown-content">
+              <li>
+                <a class="blue-text" href="#!">Urbano</a>
               </li>
               <li>
-                <div class="chip">
-                  Color: azul
-                  <i class="close material-icons">close</i>
-                </div>
+                <a class="blue-text" href="#!">Elegante</a>
+              </li>
+              <li><a class="blue-text" href="#!">Sport</a></li>
+            </ul>
+            <a class="
+                  btn
+                  blue
+                  darken-3
+                  dropdown-trigger
+                  waves-effect waves-light
+                " href="#!" data-target="dropdown4">Estilo</a>
+
+            <ul id="dropdown5" class="dropdown-content">
+              <li>
+                <a class="blue-text" href="#!">Azul</a>
               </li>
               <li>
-                <div class="chip">
-                  Suela: caucho ecológico
-                  <i class="close material-icons">close</i>
-                </div>
+                <a class="blue-text" href="#!">Negro</a>
+              </li>
+              <li><a class="blue-text" href="#!">Marrón</a></li>
+            </ul>
+            <a class="
+                  btn
+                  blue
+                  darken-3
+                  dropdown-trigger
+                  waves-effect waves-light
+                " href="#!" data-target="dropdown5">Color</a>
+
+            <ul id="dropdown6" class="dropdown-content">
+              <li>
+                <a class="blue-text" href="#!">Caucho reciclado</a>
               </li>
               <li>
-                <div class="chip">
-                  Cuerpo: tela sintética Endurance
-                  <i class="close material-icons">close</i>
-                </div>
+                <a class="blue-text" href="#!">Caucho ecológico</a>
               </li>
               <li>
-                <div class="chip">
-                  Cordones: fibra de banana
-                  <i class="close material-icons">close</i>
-                </div>
+                <a class="blue-text" href="#!">Goma sintética Endurance</a>
               </li>
             </ul>
+            <a class="
+                  btn
+                  blue
+                  darken-3
+                  dropdown-trigger
+                  waves-effect waves-light
+                " href="#!" data-target="dropdown6">Suela</a>
 
-            <!-- opciones del calzado: talle, color... -->
-            <button class="bh-inferior boton-edit-calzado z-depth-2">
-              <span class="material-icons">settings</span>
-              <span class="hide-on-small-only">Opciones</span>
-            </button>
+            <ul id="dropdown7" class="dropdown-content">
+              <li>
+                <a class="blue-text" href="#!">Tela sintética Endurance</a>
+              </li>
+              <li>
+                <a class="blue-text" href="#!">Tela de fibra de coco</a>
+              </li>
+              <li><a class="blue-text" href="#!">Cuero ecológico</a></li>
+            </ul>
+            <a class="
+                  btn
+                  blue
+                  darken-3
+                  dropdown-trigger
+                  waves-effect waves-light
+                " href="#!" data-target="dropdown7">Cuerpo del calzado</a>
 
-            <div class="bh-inferior z-depth-2 hide">
-              <button class="cerrar-bh-i">
-                <span class="material-icons">expand_more</span>
-              </button>
-              <!-- opciones de archivo: historial, reset, deshacer... -->
-              <div class="collection">
-                <a href="#!" class="collection-item blue-text darken-3"
-                  >Mis calzados</a
-                >
-                <a href="#!" class="collection-item blue-text darken-3"
-                  >Guardar calzado</a
-                >
-                <a href="#!" class="collection-item blue-text darken-3"
-                  >Reset</a
-                >
-                <a href="#!" class="collection-item blue-text darken-3"
-                  >Historial de compras</a
-                >
-                <a href="#!" class="collection-item blue-text darken-3"
-                  >Mis cupones<span
-                    id="span"
-                    class="new badge orange-text white"
-                    >1</span
-                  ></a
-                >
+            <ul id="dropdown8" class="dropdown-content">
+              <li>
+                <a class="blue-text" href="#!">Tela sintética Endurance</a>
+              </li>
+              <li>
+                <a class="blue-text" href="#!">Fibra de banana</a>
+              </li>
+            </ul>
+            <a class="
+                  btn
+                  blue
+                  darken-3
+                  dropdown-trigger
+                  waves-effect waves-light
+                " href="#!" data-target="dropdown8">Cordones</a>
+          </div>
+          <ul id="chips">
+            <li class="">
+              <div class="chip">
+                Sexo: femenino
+                <i class="close material-icons">close</i>
               </div>
-            </div>
+            </li>
+            <li>
+              <div class="chip">
+                Talle: 39
+                <i class="close material-icons">close</i>
+              </div>
+            </li>
+            <li>
+              <div class="chip">
+                Estilo: urbano
+                <i class="close material-icons">close</i>
+              </div>
+            </li>
+            <li>
+              <div class="chip">
+                Color: azul
+                <i class="close material-icons">close</i>
+              </div>
+            </li>
+            <li>
+              <div class="chip">
+                Suela: caucho ecológico
+                <i class="close material-icons">close</i>
+              </div>
+            </li>
+            <li>
+              <div class="chip">
+                Cuerpo: tela sintética Endurance
+                <i class="close material-icons">close</i>
+              </div>
+            </li>
+            <li>
+              <div class="chip">
+                Cordones: fibra de banana
+                <i class="close material-icons">close</i>
+              </div>
+            </li>
+          </ul>
 
-            <button class="bl-derecha boton-edit-calzado z-depth-2">
-              <span class="material-icons">receipt_long</span>
-              <span class="hide-on-small-only">Detalle de Calzado</span>
+          <!-- opciones del calzado: talle, color... -->
+          <button class="bh-inferior boton-edit-calzado z-depth-2">
+            <span class="material-icons">settings</span>
+            <span class="hide-on-small-only">Opciones</span>
+          </button>
+
+          <div class="bh-inferior z-depth-2 hide">
+            <button class="cerrar-bh-i">
+              <span class="material-icons">expand_more</span>
             </button>
-
-            <div class="bl-derecha z-depth-2 hide">
-              <button class="cerrar-bl-d">
-                <span class="material-icons">chevron_right</span>
-              </button>
-              <!-- parte de precios -->
-              <table>
-                <thead>
-                  <tr>
-                    <th class="blue-text">Detalle</th>
-                    <th class="blue-text">Precio</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td>Suela: caucho ecológico</td>
-                    <td>$1000</td>
-                  </tr>
-                  <tr>
-                    <td>Cuerpo: tela sintética Endurance</td>
-                    <td>$2000</td>
-                  </tr>
-                  <tr>
-                    <td>Cordones: fibra de banana</td>
-                    <td>$2000</td>
-                  </tr>
-                  <tr>
-                    <td>Zapatillas: Modelo Runner-XR</td>
-                    <td>$5000</td>
-                  </tr>
-                  <tr>
-                    <td class="green-text total">Total</td>
-                    <td class="green-text total">$9000</td>
-                  </tr>
-                </tbody>
-              </table>
+            <!-- opciones de archivo: historial, reset, deshacer... -->
+            <div class="collection">
+              <a href="#!" class="collection-item blue-text darken-3">Mis calzados</a>
+              <a href="#!" class="collection-item blue-text darken-3">Guardar calzado</a>
+              <a href="#!" class="collection-item blue-text darken-3">Reset</a>
+              <a href="#!" class="collection-item blue-text darken-3">Historial de compras</a>
+              <a href="#!" class="collection-item blue-text darken-3">Mis cupones<span id="span"
+                  class="new badge orange-text white">1</span></a>
             </div>
-            <div class="carousel">
-              <a
-                class="carousel-item tooltipped"
-                data-position="top"
-                data-tooltip="¡Elegí el modelo que más te guste!"
-                href="#one!"
-                ><img src="img/pair-of-trainers1.jpg"
-              /></a>
+          </div>
 
-              <a class="carousel-item" href="#three!"
-                ><img src="img/urbano.jpg"
-              /></a>
-              <a class="carousel-item" href="#four!"
-                ><img src="img/sport.png"
-              /></a>
-              <a class="carousel-item" href="#five!"
-                ><img src="img/elegante.jpg"
-              /></a>
-            </div>
-            <button
-              class="
+          <button class="bl-derecha boton-edit-calzado z-depth-2">
+            <span class="material-icons">receipt_long</span>
+            <span class="hide-on-small-only">Detalle de Calzado</span>
+          </button>
+
+          <div class="bl-derecha z-depth-2 hide">
+            <button class="cerrar-bl-d">
+              <span class="material-icons">chevron_right</span>
+            </button>
+            <!-- parte de precios -->
+            <table>
+              <thead>
+                <tr>
+                  <th class="blue-text">Detalle</th>
+                  <th class="blue-text">Precio</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Suela: caucho ecológico</td>
+                  <td>$1000</td>
+                </tr>
+                <tr>
+                  <td>Cuerpo: tela sintética Endurance</td>
+                  <td>$2000</td>
+                </tr>
+                <tr>
+                  <td>Cordones: fibra de banana</td>
+                  <td>$2000</td>
+                </tr>
+                <tr>
+                  <td>Zapatillas: Modelo Runner-XR</td>
+                  <td>$5000</td>
+                </tr>
+                <tr>
+                  <td class="green-text total">Total</td>
+                  <td class="green-text total">$9000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="carousel">
+            <a class="carousel-item tooltipped" data-position="top" data-tooltip="¡Elegí el modelo que más te guste!"
+              href="#one!"><img src="img/pair-of-trainers1.jpg" /></a>
+
+            <a class="carousel-item" href="#three!"><img src="img/urbano.jpg" /></a>
+            <a class="carousel-item" href="#four!"><img src="img/sport.png" /></a>
+            <a class="carousel-item" href="#five!"><img src="img/elegante.jpg" /></a>
+          </div>
+          <button class="
                 boton-crear-calzado
                 btn-large
                 blue
@@ -506,293 +420,257 @@
                 white-text
                 waves-effect waves-light
                 modal-trigger
-              "
-              data-target="modal1"
-            >
-              CREAR CALZADO
-            </button>
-            <!-- Modal crear calzado -->
-            <div id="modal1" class="modal">
-              <div class="modal-content">
-                <h4>¡Calzado creado con éxito!</h4>
-                <p>
-                  Ahora podés finalizar tu compra o crear otro calzado para
-                  agregar al carrito
-                </p>
-              </div>
-              <div class="modal-footer">
-                <a
-                  href="crea-tu-calzado.html"
-                  class="modal-close waves-effect waves-green btn-flat"
-                  >Seguir creando</a
-                >
-                <a
-                  href="pagina-de-compra.html"
-                  class="
+              " data-target="modal1">
+            CREAR CALZADO
+          </button>
+          <!-- Modal crear calzado -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>¡Calzado creado con éxito!</h4>
+              <p>
+                Ahora podés finalizar tu compra o crear otro calzado para
+                agregar al carrito
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a href="crea-tu-calzado.html" class="modal-close waves-effect waves-green btn-flat">Seguir creando</a>
+              <a href="pagina-de-compra.html" class="
                     modal-close
                     waves-effect waves-green
                     btn-flat btn
                     orange
                     finalizar-compra
-                  "
-                  >Finalizar compra</a
-                >
-              </div>
+                  ">Finalizar compra</a>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="seccion-newsletter">
-        <div class="container section">
-          <div class="row">
-            <div class="col l7 s7 #ffea00 yellow accent-3">
-              <p class="flow-text">
-                AL DARNOS TU CALZADO ANTIGUO <br />
-                PARA RECICLAR, OBTENES UN 5% DE DESCUENTO
-              </p>
-            </div>
-            <div class="col l5 s5 #ffea00 yellow accent-3">
-              <p class="flow-text">
-                <a href="" class="black-text">
-                  <h6>SUSCRIBITE A LAS NEWSLETTER</h6>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- MODAL REGISTRO -->
-    <div id="modal-registro" class="modal modal-registro">
-      <div class="modal-content">
-        <h4>Registrate como cliente</h4>
-        <h5>Completa los datos a continuación</h5>
-      </div>
-
-      <section class="formulario-envio">
-        <form action="" class="row">
-          <div class="input-field col s4">
-            <label for="">Nombre/s*</label>
-            <input type="text" value="" size="20" maxlength="30" required />
-          </div>
-          <div class="col s1"></div>
-          <div class="input-field col s4">
-            <label for="">Apellido/s*</label>
-            <input type="text" value="" size="20" maxlength="40" required />
-          </div>
-          <br />
-          <div class="input-field col s4">
-            <label for="">DNI*</label>
-            <input type="text" value="" size="10" maxlength="9" required />
-          </div>
-          <div class="col s1"></div>
-          <div class="input-field col s4">
-            <label for="">Nro Celular</label>
-            <input type="text" placeholder="011-1100112233" required />
-          </div>
-          <div class="input-field col s4">
-            <label for="">Dirección de Email*</label>
-            <input type="email" required />
-          </div>
-          <div class="col s1"></div>
-          <div class="input-field col s4">
-            <input
-              id="password"
-              type="password"
-              class="validate"
-              maxlength="10"
-              required
-            />
-            <label for="password">Contraseña*</label>
-          </div>
-          <div class="input-field col s12">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span
-                  >Deseo recibir promociones, ofertas exclusivas y participar en
-                  sorteos.</span
-                >
-              </label>
-            </p>
-          </div>
-        </form>
-      </section>
-      <div class="modal-footer-registro">
-        <a
-          href="#!"
-          value="Enviar Formulario"
-          class="modal-close waves-effect waves-yellow btn-flat"
-          >REGISTRARME</a
-        >
       </div>
     </div>
 
-    <!-- MODAL INGRESO -->
-    <div id="modal-ingreso" class="modal modal-ingreso">
-      <div class="modal-content">
-        <h4>Ya soy cliente</h4>
-        <div class="articulo-compra-ingreso row">
-          <img
-            class="col s3 responsive-img"
-            src="img/Facebook.png"
-            alt="Facebook"
-          />
-          <div class="col s6 datos-articulo">
-            <h6>Ingresa usando Facebook</h6>
-          </div>
-        </div>
-        <div class="articulo-compra-ingreso row">
-          <img
-            class="col s3 responsive-img"
-            src="img/Google.png"
-            alt="Google"
-          />
-          <div class="col s6 datos-articulo">
-            <h6>Ingresa usando Google</h6>
-          </div>
-        </div>
-        <p>O ingresa usando tu email y tu contraseña</p>
-      </div>
-      <section class="formulario-envio">
-        <form action="" class="row">
-          <div class="input-field-ingreso1 col s4">
-            <label for="">Dirección de Email*</label>
-            <input type="text" placeholder="Email" required />
-          </div>
-
-          <div class="input-field col s4">
-            <input
-              id="password"
-              type="password"
-              class="validate"
-              placeholder="Contrseña"
-              required
-            />
-            <label for="password">Contraseña*</label>
-          </div>
-
-          <div class="boton-envio-ingreso col s10">
-            <button href="#!" class="btn blue darken-2" id="cont-final">
-              INGRESAR
-            </button>
-          </div>
-        </form>
-      </section>
-
-      <div class="texto-contraseña">
-        <p>¿Olvidaste tu contraseña?</p>
-      </div>
-
-      <div class="modal-footer-ingreso">
-        <a href="#!" class="modal-close waves-effect waves-yellow btn-flat"
-          >¿AÚN NO ESTÁS REGISTRADO? REGISTRATE</a
-        >
-      </div>
-    </div>
-
-    <footer class="page-footer">
-      <div class="container">
+    <div class="seccion-newsletter">
+      <div class="container section">
         <div class="row">
-          <div class="col m5 s12">
-            <h6 class="white-text">
-              Unite a más de 5000 personas que quieren ser parte del cambio
-              ambiental.
-            </h6>
-
-            <form action="">
-              <div class="input-field">
-                <input id="email" type="email" class="validate" />
-                <label for="email">Email</label>
-              </div>
-              <input class="btn enviar-email" type="submit" value="Unite" />
-            </form>
-          </div>
-
-          <div class="col s12 divider hide-on-med-and-up"></div>
-
-          <div class="col m4 s12 hide-on-small-only">
-            <h6 class="white-text">Comunidad Endurance Argentina</h6>
-            <p class="grey-text">
-              Nos esforzamos por educar y colaborar con personas de ideas a
-              fines para marcar una diferencia ambiental y social. Juntos
-              podemos lograr un impacto.
+          <div class="col l7 s7 #ffea00 yellow accent-3">
+            <p class="flow-text">
+              AL DARNOS TU CALZADO ANTIGUO <br />
+              PARA RECICLAR, OBTENES UN 5% DE DESCUENTO
             </p>
-            <a href="nosotros.html" class="yellow-text">Acerca de nosotros</a>
           </div>
-
-          <div class="col m3 s12">
-            <h6>Contacto</h6>
-
-            <div class="valign-wrapper">
-              <span class="material-icons">email</span>
-              <div class="grey-text">info@endurance.com</div>
-            </div>
-
-            <div class="valign-wrapper">
-              <span class="material-icons">whatsapp</span>
-              <div class="grey-text">+54 1161846612</div>
-            </div>
-
-            <p class="grey-text">Atención al cliente las 24 horas</p>
-            <div class="social-media">
-              <a href="https://facebook.com" target="_black"
-                ><img src="img/Facebook.svg" alt="Facebook"
-              /></a>
-              <a href="https://twitter.com" target="_black"
-                ><img src="img/Twitter.svg" alt="Twitter"
-              /></a>
-              <a href="https://instagram.com" target="_black"
-                ><img src="img/Instagram.svg" alt="Instagram"
-              /></a>
-            </div>
+          <div class="col l5 s5 #ffea00 yellow accent-3">
+            <p class="flow-text">
+              <a href="" class="black-text">
+                <h6>SUSCRIBITE A LAS NEWSLETTER</h6>
+              </a>
+            </p>
           </div>
         </div>
       </div>
+    </div>
+  </main>
 
-      <div class="footer-copyright">
-        <div class="container">
-          Al registrarte aceptas nuestra
-          <a class="yellow-text" href="">Politica de Privacidad</a>
+  <!-- MODAL REGISTRO -->
+  <div id="modal-registro" class="modal modal-registro">
+    <div class="modal-content">
+      <h4>Registrate como cliente</h4>
+      <h5>Completa los datos a continuación</h5>
+    </div>
+
+    <section class="formulario-envio">
+      <form action="" class="row">
+        <div class="input-field col s4">
+          <label for="">Nombre/s*</label>
+          <input type="text" value="" size="20" maxlength="30" required />
+        </div>
+        <div class="col s1"></div>
+        <div class="input-field col s4">
+          <label for="">Apellido/s*</label>
+          <input type="text" value="" size="20" maxlength="40" required />
+        </div>
+        <br />
+        <div class="input-field col s4">
+          <label for="">DNI*</label>
+          <input type="text" value="" size="10" maxlength="9" required />
+        </div>
+        <div class="col s1"></div>
+        <div class="input-field col s4">
+          <label for="">Nro Celular</label>
+          <input type="text" placeholder="011-1100112233" required />
+        </div>
+        <div class="input-field col s4">
+          <label for="">Dirección de Email*</label>
+          <input type="email" required />
+        </div>
+        <div class="col s1"></div>
+        <div class="input-field col s4">
+          <input id="password" type="password" class="validate" maxlength="10" required />
+          <label for="password">Contraseña*</label>
+        </div>
+        <div class="input-field col s12">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Deseo recibir promociones, ofertas exclusivas y participar en
+                sorteos.</span>
+            </label>
+          </p>
+        </div>
+      </form>
+    </section>
+    <div class="modal-footer-registro">
+      <a href="#!" value="Enviar Formulario" class="modal-close waves-effect waves-yellow btn-flat">REGISTRARME</a>
+    </div>
+  </div>
+
+  <!-- MODAL INGRESO -->
+  <div id="modal-ingreso" class="modal modal-ingreso">
+    <div class="modal-content">
+      <h4>Ya soy cliente</h4>
+      <div class="articulo-compra-ingreso row">
+        <img class="col s3 responsive-img" src="img/Facebook.png" alt="Facebook" />
+        <div class="col s6 datos-articulo">
+          <h6>Ingresa usando Facebook</h6>
         </div>
       </div>
-    </footer>
+      <div class="articulo-compra-ingreso row">
+        <img class="col s3 responsive-img" src="img/Google.png" alt="Google" />
+        <div class="col s6 datos-articulo">
+          <h6>Ingresa usando Google</h6>
+        </div>
+      </div>
+      <p>O ingresa usando tu email y tu contraseña</p>
+    </div>
+    <section class="formulario-envio">
+      <form action="" class="row">
+        <div class="input-field-ingreso1 col s4">
+          <label for="">Dirección de Email*</label>
+          <input type="text" placeholder="Email" required />
+        </div>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var elems = document.querySelectorAll(".slider");
-        var instances = M.Slider.init(elems, {});
+        <div class="input-field col s4">
+          <input id="password" type="password" class="validate" placeholder="Contrseña" required />
+          <label for="password">Contraseña*</label>
+        </div>
 
-        var elems = document.querySelectorAll(".materialboxed");
-        var instances = M.Materialbox.init(elems);
+        <div class="boton-envio-ingreso col s10">
+          <button href="#!" class="btn blue darken-2" id="cont-final">
+            INGRESAR
+          </button>
+        </div>
+      </form>
+    </section>
 
-        //activador del sidenav
-        var elems = document.querySelectorAll(".sidenav");
-        var instances = M.Sidenav.init(elems);
+    <div class="texto-contraseña">
+      <p>¿Olvidaste tu contraseña?</p>
+    </div>
 
-        //activadores de modal
-        var elems = document.querySelectorAll(".modal-registro");
-        var instances = M.Modal.init(elems);
+    <div class="modal-footer-ingreso">
+      <a href="#!" class="modal-close waves-effect waves-yellow btn-flat">¿AÚN NO ESTÁS REGISTRADO? REGISTRATE</a>
+    </div>
+  </div>
 
-        var elems = document.querySelectorAll(".modal-ingreso");
-        var instances = M.Modal.init(elems);
-      });
-    </script>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col m4 s12">
+          <h6 class="white-text">
+            Unite a más de 5000 personas que quieren ser parte del cambio
+            ambiental.
+          </h6>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var elems = document.querySelectorAll(".carousel");
-        var instances = M.Carousel.init(elems);
-      });
-    </script>
-    <script>
-      M.AutoInit();
-    </script>
-    <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/code.js"></script>
-  </body>
+          <form action="">
+            <div class="input-field">
+              <input id="email" type="email" class="validate" />
+              <label for="email">Email</label>
+            </div>
+            <input class="btn enviar-email" type="submit" value="Unite" />
+          </form>
+        </div>
+
+        <div class="col s12 divider hide-on-med-and-up"></div>
+
+        <div class="col m4 s12 hide-on-small-only">
+          <h6 class="white-text">Comunidad Endurance Argentina</h6>
+          <p class="grey-text">
+            Nos esforzamos por educar y colaborar con personas de ideas a
+            fines para marcar una diferencia ambiental y social. Juntos
+            podemos lograr un impacto.
+          </p>
+          <a href="nosotros.html" class="yellow-text">Acerca de nosotros</a>
+        </div>
+
+        <div class="col m1 hide-on-med-and-down"></div>
+
+        <div class="col m3 s12">
+          <h6>Contacto</h6>
+
+          <div class="valign-wrapper">
+            <span class="material-icons">email</span>
+            <div class="grey-text">info@endurance.com</div>
+          </div>
+
+          <div class="valign-wrapper">
+            <span class="material-icons">whatsapp</span>
+            <div class="grey-text">+54 1161846612</div>
+          </div>
+
+          <p class="grey-text">Atención al cliente las 24 horas</p>
+          <div class="social-media">
+            <a href="https://facebook.com" target="_black"
+              ><img src="img/Facebook.svg" alt="Facebook"
+            /></a>
+            <a href="https://twitter.com" target="_black"
+              ><img src="img/Twitter.svg" alt="Twitter"
+            /></a>
+            <a href="https://instagram.com" target="_black"
+              ><img src="img/Instagram.svg" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+        Al registrarte aceptas nuestra
+        <a class="yellow-text" href="">Politica de Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var elems = document.querySelectorAll(".slider");
+      var instances = M.Slider.init(elems, {});
+
+      var elems = document.querySelectorAll(".materialboxed");
+      var instances = M.Materialbox.init(elems);
+
+      //activador del sidenav
+      var elems = document.querySelectorAll(".sidenav");
+      var instances = M.Sidenav.init(elems);
+
+      //activadores de modal
+      var elems = document.querySelectorAll(".modal-registro");
+      var instances = M.Modal.init(elems);
+
+      var elems = document.querySelectorAll(".modal-ingreso");
+      var instances = M.Modal.init(elems);
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var elems = document.querySelectorAll(".carousel");
+      var instances = M.Carousel.init(elems);
+    });
+  </script>
+  <script>
+    M.AutoInit();
+  </script>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/code.js"></script>
+</body>
+
 </html>

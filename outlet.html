@@ -50,7 +50,14 @@
           </div>
 
           <div class="control-usuario">
-            <span class="material-icons">account_circle</span>
+            <svg viewBox="479.078 240 20 20" width="28" height="28">
+              <path
+                d="M 489.078 240 C 483.558 240 479.078 244.48 479.078 250 C 479.078 255.52 483.558 260 489.078 260 C 494.598 260 499.078 255.52 499.078 250 C 499.078 244.48 494.598 240 489.078 240 Z"
+                style="fill: rgb(240, 240, 240);"></path>
+              <path
+                d="M 489.078 242.9 C 490.738 242.9 492.078 244.24 492.078 245.9 C 492.078 247.56 490.738 248.9 489.078 248.9 C 487.418 248.9 486.078 247.56 486.078 245.9 C 486.078 244.24 487.418 242.9 489.078 242.9 Z M 489.078 257.1 C 486.578 257.1 484.368 255.82 483.078 253.88 C 483.108 251.89 487.078 250.8 489.078 250.8 C 491.068 250.8 495.048 251.89 495.078 253.88 C 493.788 255.82 491.578 257.1 489.078 257.1 Z"
+                style="fill: rgb(78, 137, 225);"></path>
+            </svg>
 
             <!-- cuadro de usuario
             se activa si das click en el icono
@@ -151,7 +158,7 @@
     </li>
   </ul>
 
-  <main class="main-navegation grey lighten-3">
+  <main class="main-navegation">
     <!-- todo el contenido de la página -->
 
     <div class="degradado hide-on-small-only"></div>
@@ -250,84 +257,94 @@
             </div>
           </div>
 
-          <div class="boton-envio col s12 right-align">
-            <button class="btn-large blue darken-2" id="cont-final">Filtrar</button>
+          <div class="input-field boton-envio col s4 right-align">
+            <button class="btn-large yellow">Filtrar</button>
           </div>
         </form>
       </section>
 
-      <div class="container-outlet section col s12">
-        <div class="row">
+      <div class="row container-outlet section col s12">
 
-          <div class="calzado col l5 s5">
-            <img class="responsive-img" src="img/pair-of-trainers1.jpg">
-            <h5>$15.000.-</h5>
-            <span class="titulo-zapa">ZAPATILLAS DEPORTIVAS SPRING</span>
-            <button class="buttom-add">Agregar</button>
+        <div class="calzado col s5">
+          <img class="responsive-img" src="img/pair-of-trainers1.jpg">
+          <h5>Zapatillas Deportivas Spring</h5>
+          <div class="right-align">
+            <span class="precio">$15.000</span>
+            <button class="buttom-add z-depth-1">Agregar al carrito</button>
           </div>
-
-          <div class="col l2 s2"></div>
-          
-          <div class="calzado col l5 s5">
-            <img class="responsive-img" src="img/pair-of-trainers1.jpg">
-            <h5>$20.000.-</h5>
-            <span class="titulo-zapa">ZAPATILLAS DEPORTIVAS WINTER</span>
-            <button class="buttom-add">Agregar</button>
-          </div>
-
-
-          <div class="calzado col l5 s5">
-            <img class="responsive-img" src="img/pair-of-trainers1.jpg">
-            <h5>$25.000.-</h5>
-            <span class="titulo-zapa">ZAPATILLAS DEPORTIVAS AUTUMN</span>
-            <button class="buttom-add">Agregar</button>
-          </div>
-
-          <div class="col l2 s2"></div>
-
-          <div class="calzado col l5 s5">
-            <img class="responsive-img" src="img/elegante.jpg">
-            <h5>$12.000.-</h5>
-            <span class="titulo-zapa">CALZADO ELEGANTE SCIROCCO</span>
-            <button class="buttom-add">Agregar</button>
-          </div>
-
-
-          <div class="calzado col l5 s5">
-            <img class="responsive-img" src="img/elegante.jpg">
-            <h5>$17.000.-</h5>
-            <span class="titulo-zapa">CALZADO ELEGANTE VENTO</span>
-            <button class="buttom-add">Agregar</button>
-          </div>
-
-          <div class="col l2 s2"></div>
-
-          <div class="calzado col l5 s5">
-            <img class="responsive-img" src="img/elegante.jpg">
-            <h5>$22.000.-</h5>
-            <span class="titulo-zapa">CALZADO ELEGANTE FIESTA</span>
-            <button class="buttom-add">Agregar</button>
-          </div>
-
-
-          <div class="calzado col l5 s5">
-            <img class="responsive-img" src="img/urbano.jpg">
-            <h5>$30.000.-</h5>
-            <span class="titulo-zapa">ZAPATILLAS URBANAS MONDEO</span>
-            <button class="buttom-add">Agregar</button>
-          </div>
-
-          <div class="col l2 s2">
-          </div>
-
-          <div class="calzado col l5 s5">
-            <img class="responsive-img" src="img/urbano.jpg">
-            <h5>$35.000.-</h5>
-            <span class="titulo-zapa">ZAPATILLAS URBANAS FOCUS</span>
-            <button class="buttom-add">Agregar</button>
-          </div>
-
         </div>
+
+        <div class="col s2"></div>
+
+        <div class="calzado col s5">
+          <img class="responsive-img" src="img/pair-of-trainers1.jpg">
+          <h5>Zapatillas Deportivas Winter</h5>
+          <div class="right-align">
+            <span class="precio">$20.000</span>
+            <button class="buttom-add z-depth-1">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="calzado col s5">
+          <img class="responsive-img" src="img/pair-of-trainers1.jpg">
+          <h5>Zapatillas Deportivas Autumn</h5>
+          <div class="right-align">
+            <span class="precio">$25.000</span>
+            <button class="buttom-add z-depth-1">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="col s2"></div>
+
+        <div class="calzado col s5">
+          <img class="responsive-img" src="img/elegante.jpg">
+          <h5>Calzado Elegante Scirocco</h5>
+          <div class="right-align">
+            <span class="precio">$12.000</span>
+            <button class="buttom-add z-depth-1">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="calzado col s5">
+          <img class="responsive-img" src="img/elegante.jpg">
+          <h5>Calzado Elegante Vento</h5>
+          <div class="right-align">
+            <span class="precio">$17.000</span>
+            <button class="buttom-add z-depth-1">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="col s2"></div>
+
+        <div class="calzado col s5">
+          <img class="responsive-img" src="img/elegante.jpg">
+          <h5>Calzado Elegante Fiesta</h5>
+          <div class="right-align">
+            <span class="precio">$22.000</span>
+            <button class="buttom-add z-depth-1">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="calzado col s5">
+          <img class="responsive-img" src="img/urbano.jpg">
+          <h5>Zapatillas Urbanas Monde</h5>
+          <div class="right-align">
+            <span class="precio">$30.000</span>
+            <button class="buttom-add z-depth-1">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="col s2"></div>
+
+        <div class="calzado col s5">
+          <img class="responsive-img" src="img/urbano.jpg">
+          <h5>Zapatillas Urbanas Focus</h5>
+          <div class="right-align">
+            <span class="precio">$35.000</span>
+            <button class="buttom-add z-depth-1">Agregar al carrito</button>
+          </div>
+        </div>
+
       </div>
 
       <ul class="pagination">
@@ -452,7 +469,7 @@
   <footer class="page-footer">
     <div class="container">
       <div class="row">
-        <div class="col m5 s12">
+        <div class="col m4 s12">
           <h6 class="white-text">
             Unite a más de 5000 personas que quieren ser parte del cambio
             ambiental.
@@ -478,6 +495,8 @@
           </p>
           <a href="nosotros.html" class="yellow-text">Acerca de nosotros</a>
         </div>
+
+        <div class="col m1 hide-on-med-and-down"></div>
 
         <div class="col m3 s12">
           <h6>Contacto</h6>
