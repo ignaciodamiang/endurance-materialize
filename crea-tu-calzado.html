@@ -164,6 +164,10 @@
 
     <div class="container">
       <div class="row">
+        <div class="col s8 push-s2">
+          <input class="form-nombre-calzado" type="text" name="nombre" id="nombre" value="Calzado Personalizado 1">
+        </div>
+        
         <div class="creador-calzado col s12">
           <button class="bl-izquierda boton-edit-calzado z-depth-2">
             <span class="material-icons">edit</span>
@@ -398,8 +402,8 @@
                   <td>$5000</td>
                 </tr>
                 <tr>
-                  <td class="green-text total">Total</td>
-                  <td class="green-text total">$9000</td>
+                  <td class="blue-text total">Total</td>
+                  <td class="blue-text total">$9000</td>
                 </tr>
               </tbody>
             </table>
@@ -415,8 +419,6 @@
           <button class="
                 boton-crear-calzado
                 btn-large
-                blue
-                darken-1
                 white-text
                 waves-effect waves-light
                 modal-trigger
@@ -425,20 +427,19 @@
           </button>
           <!-- Modal crear calzado -->
           <div id="modal1" class="modal">
-            <div class="modal-content">
+            <div class="modal-content center-align">
               <h4>¡Calzado creado con éxito!</h4>
               <p>
                 Ahora podés finalizar tu compra o crear otro calzado para
                 agregar al carrito
               </p>
             </div>
-            <div class="modal-footer">
-              <a href="crea-tu-calzado.html" class="modal-close waves-effect waves-green btn-flat">Seguir creando</a>
+            <div class="modal-footer center-align">
+              <a href="crea-tu-calzado.html" class="modal-close waves-effect waves-green btn-flat seguir-creando">Seguir creando</a>
               <a href="pagina-de-compra.html" class="
                     modal-close
                     waves-effect waves-green
                     btn-flat btn
-                    orange
                     finalizar-compra
                   ">Finalizar compra</a>
             </div>
@@ -449,19 +450,17 @@
 
     <div class="seccion-newsletter">
       <div class="container section">
-        <div class="row">
+        <div class="row valign-wrapper">
           <div class="col l7 s7 #ffea00 yellow accent-3">
             <p class="flow-text">
               AL DARNOS TU CALZADO ANTIGUO <br />
               PARA RECICLAR, OBTENES UN 5% DE DESCUENTO
             </p>
           </div>
-          <div class="col l5 s5 #ffea00 yellow accent-3">
-            <p class="flow-text">
-              <a href="" class="black-text">
-                <h6>SUSCRIBITE A LAS NEWSLETTER</h6>
-              </a>
-            </p>
+          <div class="col l5 s5 right-align yellow accent-3">
+            <a href="#email" class="btn boton-newsletter">
+              SUSCRIBITE
+            </a>
           </div>
         </div>
       </div>

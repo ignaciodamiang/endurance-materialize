@@ -118,7 +118,7 @@ header > div {
   top: 60px;
   right: 10px;
   background-color: #ffffff;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 1em;
 }
 
@@ -136,6 +136,7 @@ header > div {
 .sidenav .login-registro a {
   padding: 0px 10px;
   margin: 10px 5px 0px 5px;
+  border-radius: 5px;
   background-color: rgb(78, 137, 225);
 }
 
@@ -436,7 +437,7 @@ img {
 .bl-derecha {
   position: absolute;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -477,7 +478,7 @@ img {
 .boton-edit-calzado:hover,
 .boton-edit-calzado:focus {
   cursor: pointer;
-  background-color: #f28600;
+  background-color: rgb(81, 141, 206);
   color: #ffffff;
 }
 
@@ -499,7 +500,8 @@ img {
 .cerrar-bl-d {
   background-color: rgb(221, 221, 221);
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* EMPIEZA LA SECCION DE NOSOTROS*/
