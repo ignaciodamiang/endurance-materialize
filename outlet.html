@@ -368,42 +368,49 @@
 
   <!-- MODAL REGISTRO -->
   <div id="modal-registro" class="modal modal-registro">
-    <div class="modal-content">
-      <h4>Registrate como cliente</h4>
-      <h5>Completa los datos a continuación</h5>
+    <div class="modal-content center-align">
+      <h4>Registro</h4>
+
+      <div class="articulo-compra-ingreso row valign-wrapper">
+        <img class="responsive-img" src="img/Facebook.png" alt="Facebook">
+        <div class="datos-articulo">
+          <h6>Registrate usando Facebook</h6>
+        </div>
+      </div>
+      <div class="articulo-compra-ingreso row valign-wrapper">
+        <img class="responsive-img" src="img/Google.png" alt="Google">
+        <div class="datos-articulo">
+          <h6>Registrate usando Google</h6>
+        </div>
+      </div>
+      <br>
+      <h6>O completa los datos a continuación</h6>
     </div>
 
-    <section class="formulario-envio">
+    <section class="formulario-envio container">
       <form action="" class="row">
-        <div class="input-field col s4">
+        <div class="input-field col s6">
           <label for="">Nombre/s*</label> <input type="text" value="" size="20" maxlength="30" required>
         </div>
-        <div class="col s1">
 
-        </div>
-        <div class="input-field col s4">
+        <div class="input-field col s6">
           <label for="">Apellido/s*</label> <input type="text" value="" size="20" maxlength="40" required>
         </div>
-        <br>
-        <div class="input-field col s4">
-          <label for="">DNI*</label> <input type="text" value="" size="10" maxlength="9" required>
-        </div>
-        <div class="col s1">
 
-        </div>
-        <div class="input-field col s4">
-          <label for="">Nro Celular</label> <input type="text" placeholder="011-1100112233" required>
-        </div>
-        <div class="input-field col s4">
+        <div class="input-field col s12">
           <label for="">Dirección de Email*</label> <input type="email" required>
         </div>
-        <div class="col s1">
 
-        </div>
-        <div class="input-field col s4">
+        <div class="input-field col s6">
           <input id="password" type="password" class="validate" maxlength="10" required>
           <label for="password">Contraseña*</label>
         </div>
+
+        <div class="input-field col s6">
+          <input id="password2" type="password" class="validate" maxlength="10" required>
+          <label for="password2">Confirmar Contraseña*</label>
+        </div>
+
         <div class="input-field col s12">
           <p>
             <label>
@@ -413,58 +420,65 @@
           </p>
         </div>
 
+        <div class="boton-envio-ingreso col s12 center-align">
+          <button href="#!" class="btn blue darken-2">Registrarse</button>
+        </div>
       </form>
     </section>
-    <div class="modal-footer-registro">
-      <a href="#!" value="Enviar Formulario" class="modal-close waves-effect waves-yellow btn-flat">REGISTRARME</a>
+
+    <br>
+    <div class="modal-footer-ingreso center-align">
+      <a href="#!" class="modal-close waves-effect waves-yellow btn-flat">¿Ya tenés una cuenta? Ingresa</a>
     </div>
   </div>
 
   <!-- MODAL INGRESO -->
   <div id="modal-ingreso" class="modal modal-ingreso">
-    <div class="modal-content">
-      <h4>Ya soy cliente</h4>
-      <div class="articulo-compra-ingreso row">
-        <img class="col s3 responsive-img" src="img/Facebook.png" alt="Facebook">
-        <div class="col s6 datos-articulo">
+    <div class="modal-content center-align">
+      <h4>Ingresar</h4>
+
+      <div class="articulo-compra-ingreso row valign-wrapper">
+        <img class="responsive-img" src="img/Facebook.png" alt="Facebook">
+        <div class="datos-articulo">
           <h6>Ingresa usando Facebook</h6>
         </div>
       </div>
-      <div class="articulo-compra-ingreso row">
-        <img class="col s3 responsive-img" src="img/Google.png" alt="Google">
-        <div class="col s6 datos-articulo">
+      <div class="articulo-compra-ingreso row valign-wrapper">
+        <img class="responsive-img" src="img/Google.png" alt="Google">
+        <div class="datos-articulo">
           <h6>Ingresa usando Google</h6>
         </div>
       </div>
-      <p>O ingresa usando tu email y tu contraseña</p>
+
+      <br>
+      <h6>O ingresa usando tu email y tu contraseña</h6>
     </div>
-    <section class="formulario-envio">
+    <section class="formulario-envio container">
       <form action="" class="row">
-        <div class="input-field-ingreso1 col s4">
+        <div class="input-field-ingreso1 col s12">
           <label for="">Dirección de Email*</label> <input type="text" placeholder="Email" required>
         </div>
 
-        <div class="input-field col s4">
+        <div class="input-field col s12">
           <input id="password" type="password" class="validate" placeholder="Contrseña" required>
           <label for="password">Contraseña*</label>
         </div>
 
-        <div class="boton-envio-ingreso col s10 ">
-          <button href="#!" class="btn blue darken-2" id="cont-final">INGRESAR</button>
+        <div class="boton-envio-ingreso col s12 center-align">
+          <button href="#!" class="btn blue darken-2">INGRESAR</button>
+          <br>
         </div>
       </form>
     </section>
 
-    <div class="texto-contraseña">
+    <div class="texto-contraseña center-align">
       <p>¿Olvidaste tu contraseña?</p>
     </div>
 
-
-    <div class="modal-footer-ingreso">
-      <a href="#!" class="modal-close waves-effect waves-yellow btn-flat">¿AÚN NO ESTÁS REGISTRADO? REGISTRATE</a>
+    <div class="modal-footer-ingreso center-align">
+      <a href="#!" class="modal-close waves-effect waves-yellow btn-flat">¿Aún no estás registrado? Registrate</a>
     </div>
   </div>
-
 
   <footer class="page-footer">
     <div class="container">
@@ -480,7 +494,7 @@
               <input id="email" type="email" class="validate" />
               <label for="email">Email</label>
             </div>
-            <input class="btn enviar-email" type="submit" value="Unite" />
+            <input class="btn boton-ir enviar-email yellow" type="submit" value="Unite" />
           </form>
         </div>
 
@@ -513,9 +527,15 @@
 
           <p class="grey-text">Atención al cliente las 24 horas</p>
           <div class="social-media">
-            <a href="https://facebook.com" target="_black"><img src="img/Facebook.svg" alt="Facebook" /></a>
-            <a href="https://twitter.com" target="_black"><img src="img/Twitter.svg" alt="Twitter" /></a>
-            <a href="https://instagram.com" target="_black"><img src="img/Instagram.svg" alt="Instagram" /></a>
+            <a href="https://facebook.com" target="_black"
+              ><img src="img/Facebook.svg" alt="Facebook"
+            /></a>
+            <a href="https://twitter.com" target="_black"
+              ><img src="img/Twitter.svg" alt="Twitter"
+            /></a>
+            <a href="https://instagram.com" target="_black"
+              ><img src="img/Instagram.svg" alt="Instagram"
+            /></a>
           </div>
         </div>
       </div>
