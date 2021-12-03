@@ -1,0 +1,4 @@
+Si bien tratamos de acercarnos lo más posible a lo que queríamos que se viera sobre esta sección, la idea es que a medida que
+se eligen los distintos materiales, los mismos se ven reflejados en la imagen central y,además esta imagen personalizada puede 
+rotar 360° para una mejor perspectiva.El corrusel que se encuentra en esta misma sección,modifica la imagen central del calzado 
+de acuerdo a nuestra selección.

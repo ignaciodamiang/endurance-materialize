@@ -1,5 +1,5 @@
 .boton-crear-calzado {
-  border-radius: 10px;
+  border-radius: 5px;
   z-index: 10;
   background-color: rgb(81, 141, 206) !important;
 }
@@ -39,14 +39,14 @@ table {
 .finalizar-compra {
   background-color: rgb(81, 141, 206);
   font-weight: bolder;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   padding: 0 2em;
 }
 .seguir-creando{
   background-color: #ffea00;
   font-weight: 500;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .finalizar-compra:hover, .finalizar-compra:focus, .seguir-creando:focus{
@@ -55,6 +55,7 @@ table {
 
 #span {
   font-weight: bolder;
+  color: #03275e !important;
 }
 
 
